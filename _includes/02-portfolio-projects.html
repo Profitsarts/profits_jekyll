@@ -6,7 +6,7 @@
                     <!-- projects -->
                     {% for work in site.works limit: 25 | reverse %}
 
-                    <li class="item-project span4 {{ work.tags | join: }}">
+            <li class="item-project span4 {{ work.tags | join: }}">
 
                         <a class="hover-wrap fancybox" href="{{ work.url | prepend: site.baseurl }}" data-fancybox-group="gallery" title="{{ work.title }}">
                             <h5>
@@ -21,4 +21,22 @@
                 </ul>
             </div>
     </section>
-</div>
+</div> 
+<!-- <div class="row">
+  <div id="portfolio-projects">
+    <ul id="projects">
+
+      {% assign sorted_works = site.works | sort: "weight" %}
+      {% for work in sorted_works %}
+        <li class="item-project span4 {% for tag in work.tags %}{{ tag }} {% endfor %}">
+          <h5><a href="{{ work.url }}">{{ work.title }}</a></h5>
+          <a class="hover-wrap fancybox" href="{{ work.url }}" data-fancybox-group="gallery" title="{{ work.title }}">
+            <img src="{{ work.preview }}" alt="{{ work.title }}">
+            <div class="overlay"></div>
+          </a>
+        </li>
+      {% endfor %}
+
+    </ul>
+  </div>
+</div> -->

@@ -750,12 +750,10 @@ img.projectSlider.defaultimg {
   @include breakpoint(xl) {
     border-top: none;
     border-bottom: none;
-    margin-top: 116px;
   }
   @include breakpoint(lg) {
     border-top: none;
     border-bottom: none;
-    margin-top: 105px;
   }
   @include breakpoint(xs) {
     margin-bottom: 25px;
