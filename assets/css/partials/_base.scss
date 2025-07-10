@@ -587,13 +587,23 @@ nav#menu #menu-nav li.sfHover a {
 /* ==================================================
 Material Design Card styles
 ================================================== */
-#portfolio-projects li {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  &:hover {
-     box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
-  }
-}
+// #portfolio-projects li  {
+//   border-radius: 8px;
+//   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+//   transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+//   &:hover {
+//     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+//     transform: translateY(-2px);
+//   }
+// }
+// #portfolio-projects li {
+//   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+//   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+//   &:hover {
+//      box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
+//   }
+// }
 /* ==================================================
    Single Page Portfolio Projects
 ================================================== */
