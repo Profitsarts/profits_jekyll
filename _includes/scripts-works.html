@@ -1,11 +1,25 @@
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="{{ site.baseurl }}/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> <!-- Revolution Slider -->
-<script src="{{ site.baseurl }}/assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script> <!-- Revolution Slider -->
-<script src="{{ site.baseurl }}/assets/js/jquery.superfish.min.js"></script> <!-- Superfish -->
-<script src="{{ site.baseurl }}/assets/js/jquery.supersubs.min.js"></script> <!-- Supersubs -->
-<script src="{{ site.baseurl }}/assets/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="{{ site.baseurl }}/assets/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="{{ site.baseurl }}/assets/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="{{ site.baseurl }}/assets/js/plugins.js"></script> <!-- Contains: jQuery Easing, jQuery ScrollTo -->
-<script src="{{ site.baseurl }}/assets/js/main.js"></script> <!-- Default JS -->
-<script src="{{ site.baseurl }}/assets/js/retina.js"></script>
+<!-- Js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> <!-- Google Map API -->
+<script src="{{"../assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script> <!-- Bootstrap -->
+<script src="{{"../assets/rs-plugin/js/jquery.themepunch.revolution.min.js" | prepend: site.baseurl }}"></script> <!-- Revolution Slassets -->
+<script src="{{"../assets/rs-plugin/js/jquery.themepunch.plugins.min.js" | prepend: site.baseurl }}"></script> <!-- Revolution Slider -->
+<script src="{{"../assets/js/jquery.superfish.min.js" | prepend: site.baseurl }}"></script> <!-- Superfish -->
+<script src="{{"../assets/js/jquery.supersubs.min.js" | prepend: site.baseurl }}"></script> <!-- Supersubs -->
+<script src="{{"../assets/js/jquery.isotope.js" | prepend: site.baseurl }}"></script> <!-- Isotope Filter -->
+<script src="{{"../assets/js/jquery.fancybox.pack.js" | prepend: site.baseurl }}"></script> <!-- Fancybox -->
+<script src="{{"../assets/js/jquery.fancybox-media.js" | prepend: site.baseurl }}"></script> <!-- Fancybox for Media -->
+<script src="{{"../assets/js/plugins.js" | prepend: site.baseurl }}"></script> <!-- Contains: jQuery Easing, jQuery ScrollTo -->
+<script src="{{"../assets/js/main.js" | prepend: site.baseurl }}"></script> <!-- Default JS -->
+<script src="{{"../assets/js/retina.js" | prepend: site.baseurl }}"></script>
+<!-- Smooth Scroll -->
+<script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+</script>
+<!-- End Js -->

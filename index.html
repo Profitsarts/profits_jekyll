@@ -1,8 +1,37 @@
 ---
 layout: default
-title: home
-show_portfolio: true
+show_portfolio: false
 ---
+{% include 04-bio.html %}
+<!-- Start Case Studies Divider -->
+<div class="portfolio-over_divider caseStudies-over_divider">
+  <div class="container">
+    <div class="row">
+      <div class="span12 see_divider">
+        <div id="case-studies" class="see_title">
+          <h1>CASE STUDIES</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Case Studies Divider -->
+{% include 03-case-projects.html %}
+
+
+<div class="portfolio-over_divider caseStudies-over_divider">
+  <div class="container">
+    <div class="row">
+      <div class="span12 see_divider">
+        <div id="overview" class="see_title">
+          <h1>OVERVIEW</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Start Slider -->
 <section id="slider">
@@ -12,25 +41,30 @@ show_portfolio: true
       <ul>
         <!-- THE ZERO SLIDE -->
         <li data-transition="random" data-slotamount="1" data-masterspeed="300">
-          <img src="{{ site.baseurl }}/assets/img/slider-images/image-00.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+          <img src="assets/img/slider-images/image-10.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+        </li>
+        <!-- THE ZERO,1 SLIDE -->
+        <li data-transition="random" data-slotamount="1" data-masterspeed="300">
+          <img src="assets/img/slider-images/image-00.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+        </li>
 
         <!-- THE FIRST SLIDE -->
         <li data-transition="random" data-slotamount="1" data-masterspeed="300">
-          <img src="{{ site.baseurl }}/assets/img/slider-images/image-01.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
-
+          <img src="assets/img/slider-images/image-01.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+          </li>
           <!-- THE SECOND SLIDE -->
           <li data-transition="random" data-slotamount="1" data-masterspeed="300">
-            <img src="{{ site.baseurl }}/assets/img/slider-images/image-02.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+            <img src="assets/img/slider-images/image-09.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
           </li>
 
           <!-- THE THIRD SLIDE -->
           <li data-transition="random" data-slotamount="1" data-masterspeed="300">
-            <img src="{{ site.baseurl }}/assets/img/slider-images/image-03.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+            <img src="assets/img/slider-images/image-03.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
 
           </li>
           <!-- THE FOURTH SLIDE -->
           <li data-transition="random" data-slotamount="1" data-masterspeed="300">
-            <img src="{{ site.baseurl }}/assets/img/slider-images/image-04.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+            <img src="assets/img/slider-images/image-04.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
 
             <!-- <div class="caption very_big_custom_text sft"
                          data-x="center"
@@ -48,7 +82,7 @@ show_portfolio: true
           </li>
           <!-- THE FIFTH SLIDE -->
           <li data-transition="random" data-slotamount="1" data-masterspeed="300">
-            <img src="{{ site.baseurl }}/assets/img/slider-images/image-08.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
+            <img src="assets/img/slider-images/image-08.jpg" data-rjs="2" alt="Image" data-fullwidthcentering="on">
 
           </li>
       </ul>
@@ -58,7 +92,7 @@ show_portfolio: true
 <!-- End Slider -->
 
 <!-- Start See Divider -->
-<div class="portfolio-over_divider">
+<div class="portfolio-over_divider see-over_divider">
   <div class="container">
     <div class="row">
       <div class="span12 see_divider">
@@ -84,7 +118,7 @@ show_portfolio: true
 <!-- End Section Portfolio Projects -->
 
 <!-- Start Touch Divider -->
-<div class="portfolio-under_divider">
+<div class="portfolio-under_divider touch-over_divider">
   <div class="container">
     <div class="row">
       <div class="span12">
@@ -102,53 +136,42 @@ show_portfolio: true
   <div class="container">
     <!-- Contact Form -->
     <div class="row contact-margin-bottom">
-     
-      <div class="span9">
+      <!-- Contact Details -->
+      <div class="span3">
+        <div class="contact-details">
 
-
-        
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/mjkwzyrp" method="POST">
-  <div class="row contact-margin-bottom">
-
-    <!-- Contact Details -->
-    <div class="span3">
-      <div class="contact-details">
-        <ul>
-          <li><h4>Contact Details</h4></li>
-          <li><h3>Profits Arts'n'Grafx</h3></li>
-          <li><a href="mailto:profitsarts@gmail.com" title="email me">profitsarts@gmail.com</a></li>
-        </ul>
+          <ul>
+            <li>
+              <h4>Contact Details</h4>
+            </li>
+            <li>
+              <h3>Profits Arts'n'Grafx</h3>
+            </li>
+            <li><a href="mailto:profitsarts@gmail.com" title="email me">profitsarts@gmail.com</a></li>
+            <li>0034 656 559 570</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <!-- Contact Form Fields -->
-    <div class="span9">
-      <h4 class="keepTouch">Let's keep in touch</h4>
-
-      <p class="contact-name">
-        <label for="contact_name">Full Name</label>
-        <input id="contact_name" type="text" name="name" placeholder="Full Name" required>
-      </p>
-
-      <p class="contact-email">
-        <label for="contact_email">Email</label>
-        <input id="contact_email" type="email" name="email" placeholder="Email Address" required>
-      </p>
-
-      <p class="contact-message">
-        <label for="contact_message">Message</label>
-        <textarea id="contact_message" name="message" placeholder="Your Message" rows="15" cols="40" required></textarea>
-      </p>
-
-      <!-- Honeypot anti-spam -->
-      <input type="text" name="_gotcha" style="display:none">
-
-      <p class="contact-submit">
-        <button type="submit" class="submit" name="button">Send Your Email</button>
-      </p>
-    </div>
-  </div>
-</form>
+      <!-- End Contact Details -->
+      <div class="span9">
+        <h4 class="keepTouch">Let's keep in touch</h4>
+        <form id="contact-form" class="contact-form" action="//formspree.io/profitsarts@gmail.com" method="POST">
+          <p class="contact-name">
+            <input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+          </p>
+          <p class="contact-email">
+            <input id="contact_email" type="text" placeholder="Email Address" value="" name="_replyto" />
+          </p>
+          <p class="contact-message">
+            <textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+          </p>
+          <p class="contact-submit">
+            <button type="submit" class="submit" name="button">Send Your Email</button>
+          </p>
+          <div id="response">
+            <input type="text" name="_gotcha" style="display:none">
+          </div>
+        </form>
 
       </div>
     </div>
