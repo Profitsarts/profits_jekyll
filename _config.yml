@@ -37,8 +37,16 @@ plugins:
   #- jekyll-feed
 
 exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - package.json
+  - README.md
+  - gulpfile.js
   - _posts
-
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
