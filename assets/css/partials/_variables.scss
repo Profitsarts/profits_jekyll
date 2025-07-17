@@ -1,15 +1,17 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
   /* Style Rules */
 }
-$negro: black;
+$negro: #0D080C;
 $blanco: #f8f8f8;
-$perla: #E1E1E1;
-$marron: #5b5852;
-$verde: #54b589;
-$salmon: #F97E76;
+$gris-anubis: #323A45;
+$perla: #E1E1E1; 
+$verde: #55917F;
+$salmon:#F61067;
+//$verde: #54b589;
+//$salmon: #F97E76;
 $gris: #7c7b79;
 $gris-dot: rgb(187, 187, 187);
-$gris-anubis: #323A45;
+
 //GRADIENTS//
 $grad01: linear-gradient(13deg, lighten($verde, 35%), lighten(#83a4d4, 25%));
 //FONTS//
