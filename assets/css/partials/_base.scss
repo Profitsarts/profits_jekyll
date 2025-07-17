@@ -316,16 +316,16 @@ nav#menu #menu-nav li.sfHover a {
     letter-spacing: 0.1em;
     margin: 0;
     padding: 0.9em 0;
-    font-family: 'Museo Slab';
-    font-size: 2.8em;
+    font-family: $avant;
+    font-size: 2.5em;
     text-align: center;
     @include breakpoint(md) {
       padding: 0.8em 0;
-      font-size: 3em;
+      font-size: 2.3em;
     }
     @include breakpoint(sm) {
       padding: 0.8em 0;
-      font-size: 2.2em;
+      font-size: 2em;
     }
     @include breakpoint(xs) {
       padding: 0.65em 0;
@@ -393,7 +393,7 @@ nav#menu #menu-nav li.sfHover a {
         }
         &:active,
         &:hover {
-          color: $verde;
+          color: $salmon;
           @include transition(all, 0.2s, ease-in-out);
         }
       }
@@ -402,19 +402,21 @@ nav#menu #menu-nav li.sfHover a {
 }
 .dropdown {
   .dropmenu {
+    background: $gris-anubis;
     // 	&:hover{
-    // 		background-color: $blanco;
+    // 		background-color: $gris-anubis;
     // }
     p {
+      padding: 0.8rem 0 0.8rem 1rem;
       font-family: $museo;
-      font-size: 1rem;
+      font-size: 1.1rem;
       @include breakpoint(sm) {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       @include breakpoint(xs) {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
       }
-      color: $gris-anubis;
+      color: $blanco;
       font-weight: normal;
          
     }
@@ -430,15 +432,22 @@ nav#menu #menu-nav li.sfHover a {
     ul li {
       a {
         font-family: $museo;
-        font-size: 13px;
+        font-size: 1.1rem;
+        @include breakpoint(sm) {
+          font-size: 1rem;
+        }
+        @include breakpoint(xs) {
+          font-size: 1rem;
+        }
         color: $gris-anubis;
-        background-color: $gris-dot;
+        background-color: $blanco;
+
         font-weight: normal;
         padding: 8px 0 8px 15px;
       }
-      &:hover {
-        color: $verde;
-      }
+      // &:hover {
+      //   color: $verde;
+      // }
     }
   }
 }
@@ -561,13 +570,14 @@ nav#menu #menu-nav li.sfHover a {
 }
 //Altura justa para no interferir con sombra de cards
 #portfolio-projects {
+  overflow: visible !important;
 
 }
 // Project text hover
 #projects > li > a > h5 {
   color: $gris-anubis;
-  font-family: $museo;
-  font-size: 1.5em;
+  font-family: $avant;
+  font-size: 1.1em;
   // font-weight: 100;
   line-height: 1.5em;
   margin: 0 0 20px;
@@ -579,7 +589,7 @@ nav#menu #menu-nav li.sfHover a {
   width: 100%;
   left: 0;
   top: 0;
-  background: $verde;
+  background: $salmon;
   opacity: 0;
   filter: alpha(opacity = 0);
   -webkit-transition: opacity 0.15s ease-in-out 0s;
@@ -588,7 +598,7 @@ nav#menu #menu-nav li.sfHover a {
   transition: opacity 0.15s ease-in-out 0s;
   .item-project h5 a {
     font-family: $avant;
-    font-size: 13px;
+    font-size: 1rem;
     color: $negro;
     &:hover {}
   }
@@ -597,7 +607,7 @@ nav#menu #menu-nav li.sfHover a {
 Material Design Card styles
 ================================================== */
 // #portfolio-projects li  {
-//   border-radius: 8px;
+//   border-radius: 0px;
 //   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 //   transition: box-shadow 0.3s ease, transform 0.2s ease;
 
@@ -606,13 +616,13 @@ Material Design Card styles
 //     transform: translateY(-2px);
 //   }
 // }
-// #portfolio-projects li {
-//   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-//   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-//   &:hover {
-//      box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
-//   }
-// }
+#portfolio-projects li {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.10);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover {
+     box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
+  }
+}
 /* ==================================================
    Single Page Portfolio Projects
 ================================================== */
