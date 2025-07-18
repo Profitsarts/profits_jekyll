@@ -61,15 +61,15 @@ header {
 }
 div#logo {
   width: 43px;
-  margin: 30px auto -15px !important;
+  margin: 20px auto -15px !important;
   float: none !important;
   @include breakpoint(lg) {
     width: 43px;
-    margin: 13px auto -15px !important;
+    margin: 16px auto -15px !important;
   }
   @include breakpoint(md) {
     width: 37px;
-    margin: 10px auto -28px !important;
+    margin: 16px auto -28px !important;
   }
   @include breakpoint(sm) {
     width: 35px;
@@ -83,22 +83,45 @@ div#logo {
   }
 }
 .profits_logo {
-  display: inline-block;
-  position: relative;
-  width: 40px;
-  height: 57px;
-  text-indent: -9999px;
-  background: url("../img/logos/profits_logo.svg") no-repeat;
+  display: block;
+  width: 128%;
+  margin-bottom: 15px;
+  height: auto; // mantiene proporción vertical del fondo, si el SVG es cuadrado
+  aspect-ratio: 1/1; // añade esto si quieres que siempre sea cuadrado
+  background: url("../img/logos/profits_logo.svg") no-repeat center center;
+  background-size: contain;
+  @include breakpoint(lg) {
+    width: 120%;
+    margin-bottom: 10px;
+  }
   @include breakpoint(md) {
-    width: 35px;
+    width: 118%;
+    margin-bottom: 8px;
   }
   @include breakpoint(sm) {
-    width: 35px;
+    width: 110%;
   }
   @include breakpoint(xs) {
-    width: 32px;
+    width: 110%;
   }
 }
+// .profits_logo {
+//   display: inline-block;
+//   position: relative;
+//   width: 40px;
+//   height: 57px;
+//   text-indent: -9999px;
+//   background: url("../img/logos/profits_logo.svg") no-repeat;
+//   @include breakpoint(md) {
+//     width: 35px;
+//   }
+//   @include breakpoint(sm) {
+//     width: 35px;
+//   }
+//   @include breakpoint(xs) {
+//     width: 32px;
+//   }
+// }
 /* ==================================================
    NAVBAR
 ================================================== */
@@ -167,7 +190,7 @@ nav#menu {
 
       a {
         font-family: $museo;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: $gris-anubis;
         font-weight: normal;
         line-height: 40px;
