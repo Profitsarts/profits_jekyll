@@ -9,7 +9,7 @@
   	-webkit-border-radius: 2px;
        -moz-border-radius: 2px;
             border-radius: 2px;
-  	background-color: #323A45;
+  	background-color: $gris-anubis;
   	color: #FFFFFF;
   	vertical-align: middle;
 	line-height: 1em;
@@ -33,7 +33,7 @@
 .button-main:hover,
 .button-main:active,
 .button-main:focus {
-	background-color: #F97E76;
+	background-color: $salmon;
 	color: #FFFFFF;
 }
 
@@ -67,14 +67,14 @@
 /*--- Inverted ---*/
 
 .button-main.inverted {
-	background-color: #F97E76;
+	background-color: $salmon;
 	color: #FFFFFF;
 }
 
 .button-main.inverted:hover,
 .button-main.inverted:active,
 .button-main.inverted:focus {
-	background-color: #323A45;
+	background-color: $gris-anubis;
 }
 
 /* ==================================================
@@ -93,7 +93,7 @@
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	
-	background: #323A45;
+	background: $gris-anubis;
 	
 	-webkit-transition: background 0.15s ease-in-out 0s;	
 	   -moz-transition: background 0.15s ease-in-out 0s;
@@ -130,7 +130,7 @@
 .dropmenu:hover,
 .dropmenu.open,
 .dropmenu.open {
-	background-color: #F97E76;
+	background-color: $salmon;
 }*/
 
 .dropmenu.open i {
@@ -152,7 +152,7 @@
 	-moz-border-radius: 0 0 2px 2px;
 	border-radius: 0 0 2px 2px;
 	
-	background: #323A45;
+	background: $gris-anubis;
 	color: #FFFFFF;
 	
 	z-index: 10;
@@ -176,7 +176,7 @@
 }
 
 .dropmenu-active ul li a:hover {
-	color: #F97E76;
+	color: $salmon;
 }
 
 .dropmenu-active ul li:first-child a {
@@ -205,7 +205,7 @@
   	display: block;
   	padding: 15px;
 	background: #E9F0F4;
-	color: #323A45;
+	color: $gris-anubis;
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -227,12 +227,12 @@
 
 .accordion-heading:hover .accordion-toggle,
 .accordion-heading:hover .accordion-toggle.inactive {
-	background: #F97E76;
+	background: $salmon;
 	color: #FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.active {
-	background: #F97E76;
+	background: $salmon;
 	color: #FFFFFF;
 	
 	-webkit-border-radius: 4px 4px 0 0;
@@ -242,7 +242,7 @@
 
 .accordion-heading .accordion-toggle.inactive {
 	background: #E9F0F4;
-	color: #323A45;
+	color: $gris-anubis;
 }
 
 .accordion-heading.accordionize .accordion-toggle span,
@@ -251,7 +251,7 @@
     top: 50%;
     right: 20px;
     margin: -8px 0 0 0;
-    color: #323A45;
+    color: $gris-anubis;
     font-size: 18px;
 	
 	-webkit-transition: all 0.1s linear 0s;
@@ -350,11 +350,11 @@
 
 .alert-standard {
   	background-color: #E9F0F4;
-	color: #323A45;
+	color: $gris-anubis;
 }
 
 .alert-standard .close {
-	color: #323A45;	
+	color: $gris-anubis;	
 }
 
 .alert-success {
@@ -397,7 +397,7 @@
 
 .nav > li > a {
   	display: block;
-  	color: #323A45;
+  	color: $gris-anubis;
   	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -409,7 +409,7 @@
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  	background-color: #F97E76;
+  	background-color: $salmon;
 	color: #FFFFFF;
   	text-decoration: none;
   	display: block;
@@ -461,7 +461,7 @@
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
 	border: none;
-  	background-color: #F97E76;
+  	background-color: $salmon;
 	color: #FFFFFF;
   	cursor: default;
 }
@@ -563,7 +563,7 @@ blockquote p {
   	-webkit-border-radius: 4px;
        -moz-border-radius: 4px;
           	border-radius: 4px;
-  	background-color: #F97E76;
+  	background-color: $salmon;
   	color: #FFFFFF;
   	text-align: center;
   	text-decoration: none;
@@ -582,7 +582,7 @@ blockquote p {
   	left: 50%;
   	margin-left: -15px;
   	border-width: 10px 10px 0;
-  	border-top-color: #F97E76;
+  	border-top-color: $salmon;
 }
 
 .tooltip.right .tooltip-arrow {
@@ -590,7 +590,7 @@ blockquote p {
   	left: 0;
   	margin-top: -15px;
   	border-width: 10px 10px 10px 0;
-  	border-right-color: #F97E76;
+  	border-right-color: $salmon;
 }
 
 .tooltip.left .tooltip-arrow {
@@ -598,7 +598,7 @@ blockquote p {
   	right: 0;
   	margin-top: -15px;
   	border-width: 10px 0 10px 10px;
-  	border-left-color: #F97E76;
+  	border-left-color: $salmon;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -606,7 +606,7 @@ blockquote p {
   	left: 50%;
   	margin-left: -15px;
   	border-width: 0 10px 10px;
-  	border-bottom-color: #F97E76;
+  	border-bottom-color: $salmon;
 }
 
 /* ==================================================
@@ -614,11 +614,11 @@ blockquote p {
 ================================================== */
 
 .color-text {
-    color: #F97E76;
+    color: $salmon;
 }
 
 .highlight-text {
-	background-color: #F97E76;
+	background-color: $salmon;
     color: #FFFFFF;
 	padding: 0 4px;
 }
@@ -629,7 +629,7 @@ blockquote p {
 
 .dropcap {
 	background-color: #E9F0F4;
-    color: #323A45;
+    color: $gris-anubis;
 	display: inline-block;
 	float: left;
 	font-size: 24px;
@@ -642,7 +642,7 @@ blockquote p {
 }
 
 .dropcap.color {
-	background-color: #F97E76;
+	background-color: $salmon;
 	color: #FFFFFF;
 }
 
@@ -652,7 +652,7 @@ blockquote p {
 ================================================== */
 
 .info-block {
-	border-left: 2px solid #F97E76;
+	border-left: 2px solid $salmon;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -733,7 +733,7 @@ blockquote p {
 }
 
 .progress .bar {
-	background-color: #F97E76;
+	background-color: $salmon;
 	background-image: none;
 	
 	-webkit-border-radius: 0;
@@ -796,7 +796,7 @@ blockquote p {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #F97E76;
+	background: $salmon;
 	
 	opacity: 0.85;
 	filter: alpha(opacity=85);
@@ -838,7 +838,7 @@ blockquote p {
 }
 
 .pricing-table .price {
-    background: #323A45;
+    background: $gris-anubis;
 	border-top: 1px solid #F0F0F0;
     color: #FFFFFF;
     display: block;
@@ -895,7 +895,7 @@ blockquote p {
 }
 
 .pricing-table.selected .price {
-    background: #F97E76;
+    background: $salmon;
     color: #FFFFFF;
 }
 
@@ -963,7 +963,7 @@ blockquote p {
 
 .icons-example ul li:hover a,
 .icons-example ul li.active a {
-	background-color: #F97E76;	
+	background-color: $salmon;	
 }
 
 .icons-example ul li:hover a span,
@@ -984,7 +984,7 @@ blockquote p {
 	-moz-border-radius: 2px;
     border-radius: 2px;
 	
-    color: #323A45;
+    color: $gris-anubis;
     font-size: 13px;
     line-height: 40px;
     margin-bottom: 20px;
@@ -1001,6 +1001,6 @@ blockquote p {
 }
 
 .show-grid:hover {
-	background-color: #F97E76;
+	background-color: $salmon;
 	color: #FFFFFF;	
 }
