@@ -736,7 +736,7 @@ img.projectSlider.defaultimg {
 .keepTouch {
   font-family: $museo;
   font-size: 1.8em;
-  color: $salmon;
+  color: $verde;
   @include breakpoint(xl) {
     font-size: 2.8em;
     margin-top: 20px;
@@ -790,6 +790,13 @@ img.projectSlider.defaultimg {
     }
     @include breakpoint(lg) {
       text-align: left;
+    }
+    a {
+      color:$gris-anubis!important;
+      text-decoration: none !important;
+      &:hover {
+        color: $salmon !important;
+      }
     }
   }
   h3 {
