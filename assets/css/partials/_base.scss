@@ -114,12 +114,18 @@ div#logo {
   @include breakpoint(sm) { margin-top: -50px; }
   @include breakpoint(xs) {
     margin-top: -52px;
-    padding-left: 28%;
+    margin-left: 0px;
+    padding-left: 0px;
   }
 }
 
 nav#menu {
   margin: 0 auto 20px !important;
+  @include breakpoint(xs) {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    margin-left: 6rem !important;
+  }  
   float: none !important;
   width: fit-content;
   max-width: 100%;
@@ -198,6 +204,9 @@ nav#menu #menu-nav li.sfHover a {
   background-color: $blanco !important;
   color: $negro !important;
 }
+
+
+
 /* ==================================================
    MAIN CAROUSEL
 ================================================== */
