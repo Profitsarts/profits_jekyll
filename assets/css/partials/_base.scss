@@ -104,134 +104,96 @@ div#logo {
 ================================================== */
 #menu {
   display: block;
+  margin: auto;
 }
+
 #navbar {
   width: 100%;
   margin-top: 5px;
-  @include breakpoint(md) {
-    margin-top: 0;
-  }
-  @include breakpoint(sm) {
-    margin-top: -50px;
-  }
+  @include breakpoint(md) { margin-top: 0; }
+  @include breakpoint(sm) { margin-top: -50px; }
   @include breakpoint(xs) {
     margin-top: -52px;
     padding-left: 28%;
   }
 }
+
 nav#menu {
   margin: 0 auto 20px !important;
   float: none !important;
-  width: 245px;
+  width: fit-content;
+  max-width: 100%;
   padding: 0;
-  border-top: 1px dotted $gris-dot;
-  border-bottom: 1px dotted $gris-dot;
-  @include breakpoint(lg) {
-    // margin: 0 auto 20px !important;
-    float: none !important;
-    width: 216px;
+  background: transparent;
+  border: none;
+
+  #menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
     padding: 0;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey;
-  }
-  @include breakpoint(md) {
-    margin: 0 auto 20px !important;
-    float: none !important;
-    width: 178px;
-    padding: 0;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey;
-  }
-  @include breakpoint(sm) {
-    margin: -22px auto 0 !important;
-    float: none !important;
-    width: 173px;
-    padding: 0;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey;
-  }
-  @include breakpoint(xs) {
-    margin: -10px 0 0 !important;
-    float: none !important;
-    width: 190px;
-    padding: 0;
-    border-top: 1px dotted grey;
-    border-bottom: 1px dotted grey;
-  }
-}
-nav#menu #menu-nav {
-  @include breakpoint(xs) {
-    // margin-top: -2px !important;
-  }
-  li {
-    display: inline-block;
     list-style: none;
-    float: none;
-    padding: 0 20px;
-    margin-top: 3px;
-    @include breakpoint(lg) {
-      padding: 0 17px;
-    }
-    @include breakpoint(md) {
-      padding: 0 10px;
-    }
-    @include breakpoint(sm) {
-      padding: 0 11px;
-    }
-    @include breakpoint(xs) {
-      padding: 0 15px;
-    }
-    &:last-child {
-      padding-right: 0;
-      margin-right: 0;
-    }
-    &:first-child {
-      padding-left: 0;
-      margin-left: 0;
-    }
-    a {
-      font-family: $museo;
-      color: $negro;
-      font-size: 18px;
-      font-weight: normal;
-      line-height: 40px;
-      display: block;
-      letter-spacing: -0.2px;
-      text-transform: uppercase;
-      @include breakpoint(lg) {
-        font-size: 16px;
-        line-height: 35px;
+    position: relative;
+    border-top: 1px dotted $gris-dot;    // <--- LÍNEA ARRIBA
+    border-bottom: 1px dotted $gris-dot; // <--- LÍNEA ABAJO
+
+    li {
+      display: inline-block;
+      list-style: none;
+      float: none;
+      margin-top: 3px;
+      padding: 0 24px; // Espaciado entre botones, ajústalo si quieres
+
+      @include breakpoint(lg) { padding: 0 17px; }
+      @include breakpoint(md) { padding: 0 10px; }
+      @include breakpoint(sm) { padding: 0 11px; }
+      @include breakpoint(xs) { padding: 0 15px; }
+
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
       }
-      @include breakpoint(md) {
-        font-size: 15px;
-        line-height: 32px;
+      &:first-child {
+        padding-left: 0;
+        margin-left: 0;
       }
-      @include breakpoint(sm) {
-        font-size: 14px;
-        line-height: 28px;
-      }
-      @include breakpoint(xs) {
-        font-size: 14px;
-        line-height: 28px !important;
+
+      a {
+        font-family: $museo;
+        font-size: 1.6rem;
+        color: $gris-anubis;
+        font-weight: normal;
+        line-height: 40px;
+        display: block;
+        letter-spacing: -0.2px;
+        text-transform: uppercase;
+        padding: 0;
+        text-align: center;
+
+        @include breakpoint(lg) { font-size: 1.2rem; line-height: 35px; }
+        @include breakpoint(md) { font-size: 1rem; line-height: 32px; }
+        @include breakpoint(sm) { font-size: 0.9rem; line-height: 28px; }
+        @include breakpoint(xs) { font-size: 0.8rem; line-height: 28px !important; }
       }
     }
   }
 }
+
 nav#menu #menu-nav li a:active,
 nav#menu #menu-nav li a:hover,
 nav#menu #menu-nav li.active a,
 nav#menu #menu-nav li.sfHover a {
-  color: $gris;
+  color: $salmon;
   @include transition(all, 0.2s, ease-in-out);
 }
+
 #mobile-nav {
   display: none;
   float: none;
 }
-.no-touch .tparrows:hover {
-  background-color: $blanco !important;
-  color: $negro !important;
-}
+
+.no-touch .tparrows:hover,
 .tparrows:hover {
   background-color: $blanco !important;
   color: $negro !important;
