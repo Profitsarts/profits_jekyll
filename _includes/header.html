@@ -1,38 +1,35 @@
 <!-- Header -->
 <header>
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div id="logo">
-                    <a style="background: url('{{"/assets/img/logos/profits_logo.svg" | prepend: site.baseurl }}') no-repeat !important;" href="{{site.baseurl}}/" class="profits_logo pull-left" title="Profits"></a>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row header-row">
+      <div class="span12">
+        <div id="logo-navbar-wrapper">
+          <div id="logo">
+            <a style="background: url('{{"/assets/img/logos/profits_logo.svg" | prepend: site.baseurl }}') no-repeat center center !important; display: block; width: 70px; height: 78px; background-size: contain !important;"
+               href="{{site.baseurl}}/"
+               class="profits_logo"
+               title="Profits"></a>
+          </div>
+          <nav id="menu">
+            <ul id="menu-nav">
+              {% if page.show_portfolio %}
+                <li><a href="{{ site.baseurl }}/#see">SEE</a></li>
+              {% else %}
+                <li><a href="#see">SEE</a></li>
+              {% endif %}
+              {% if page.show_portfolio %}
+                <li><a href="{{ site.baseurl }}/#contact">TOUCH</a></li>
+              {% else %}
+                <li><a href="#contact">TOUCH</a></li>
+              {% endif %}
+              <li>
+                <a href="https://soundcloud.com/condres" target="_blank" title="Soundcloud">HEAR</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="row">
-            <div id="navbar" class="span12">
-                <!-- Mobile Menu -->
-                <!-- <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a> -->
-                <!-- Standard Menu -->
-                <nav id="menu">
-                    <ul id="menu-nav">
-                        {% if page.show_portfolio %}
-                        <li><a href="{{ site.baseurl }}/#see">SEE</a>
-                        </li>
-                        {% else %}
-                        <li><a href="#see">SEE</a>
-                        {% endif %}
-                        {% if page.show_portfolio %}
-                        <li><a href="{{ site.baseurl }}/#contact">TOUCH</a>
-                        </li>
-                        {% else %}
-                        <li><a href="#contact">TOUCH</a>
-                        {% endif %}
-                        <li><a href="https://soundcloud.com/condres" target="_blank" title="Soundcloud">HEAR</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </header>
 <!-- End Header -->
