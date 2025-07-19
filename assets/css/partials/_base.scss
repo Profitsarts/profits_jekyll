@@ -238,58 +238,6 @@ nav#menu #menu-nav li.sfHover a {
   color: $negro !important;
 }
 /* ==================================================
-   BIO
-================================================== */
-.avatar {
-  img {
-    width: 100%;
-    height: auto;
-
-    @include breakpoint(md) {
-      width: 100%;
-      height: auto;
-    }
-    @include breakpoint(sm) {
-      width: 30%;
-      height: auto;
-      margin: 0 auto;
-
-    }
-    @include breakpoint(xs) {
-      width: 40%;
-      height: auto;
-      margin: 0 auto;
-    }
-  }
-}
-
-.clip-circle {
-  clip-path: circle(50% at center) !important;
-}
-
-.avatar-bio {
-
-}
-
-.avatar-headline {
-  margin-left: 1em;
-  margin-bottom: 1em;
-
-  @include breakpoint(sm) {
-    font-size:  1.1em;
-    line-height: 1.2m;
-
-  }
-  @include breakpoint(xs) {
-    font-size:  1.1em;
-    line-height: 1.2em;
-  }
-}
-
-
-
-
-/* ==================================================
    MAIN CAROUSEL
 ================================================== */
 .fullwidthbanner-container {
@@ -599,5 +547,623 @@ iframe {
   }
   @include breakpoint(xs) {
     display: none;
+  }
+}
+/* ==================================================
+   Section Title Page
+================================================== */
+// #title-page {
+// 	position: relative;
+// 	background-color: $verde;
+// 	margin-top: 100px;
+// 	padding: 70px 0 0px;
+// 	h2 {
+// 		color:$blanco;
+// 	    font-size: 32px;
+// 	    font-weight: 300;
+// 	    line-height: 1.2;
+// 		padding: 60px 0;
+// 		margin-bottom: 0;
+// 		text-align: center;
+// 			span{
+// 				color:$salmon;
+// 			}
+// 		}
+// }
+// .page-title {
+// 	padding: 0 0 40px;
+// 	border-bottom: 1px solid #E6E6E6;
+// 	margin-bottom: 50px;
+// }
+// .page-title h3 {
+// 	font-size: 36px;
+//     line-height: 1.5;
+//     margin-bottom: 20px;
+// 	font-weight: 300;
+//     padding: 0 25px;
+// 	margin-bottom: 0;
+//     text-align: center;
+// }
+/* ==================================================
+   PORTFOLIO PROJECTS (SEE)
+================================================== */
+#content {
+  padding: 0;
+  position: relative;
+  background-color: none;
+}
+#portfolio {
+  padding-top: 0;
+  background-color: none;
+}
+//Altura justa para no interferir con sombra de cards
+#portfolio-projects {
+
+}
+// Project text hover
+#projects > li > a > h5 {
+  color: $gris-anubis;
+  font-family: $museo;
+  font-size: 18px;
+  // font-weight: 100;
+  line-height: 1.5em;
+  margin: 0 0 20px;
+}
+.item-project .hover-wrap .overlay {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: $verde;
+  opacity: 0;
+  filter: alpha(opacity = 0);
+  -webkit-transition: opacity 0.15s ease-in-out 0s;
+  -moz-transition: opacity 0.15s ease-in-out 0s;
+  -o-transition: opacity 0.15s ease-in-out 0s;
+  transition: opacity 0.15s ease-in-out 0s;
+  .item-project h5 a {
+    font-family: $avant;
+    font-size: 13px;
+    color: $negro;
+    &:hover {}
+  }
+}
+/* ==================================================
+Material Design Card styles
+================================================== */
+#portfolio-projects li {
+  //box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  //transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover {
+     box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
+  }
+  // &:hover {
+  //    box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
+  // }
+}
+/* ==================================================
+   Single Page Portfolio Projects
+================================================== */
+
+#portfolio-content {
+  background-color: $grad01;
+  margin-bottom: 0;
+  h2 {
+    font-size: 2rem;
+    color: $gris-anubis;
+    font-family: $museo;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0 0 10px;
+  }
+
+  h3 {
+    color: $gris-anubis;
+    font-family: $museo;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    @include breakpoint(xs) {
+      font-size: 16px;
+    }
+  }
+  .work-def {
+    color: $negro !important;
+    font-family: $museo;
+    font-size: 1.2em;
+    line-height: 1.9em;
+    vertical-align: baseline;
+    letter-spacing: 0.4px;
+    word-spacing: 0px;
+    font-weight: lighter;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: rgb(41, 41, 41);
+    text-align: start;
+    text-indent: 0px;
+    @include breakpoint(xs) {
+      font-size: 0.9em;
+      line-height: 1.8em;
+    }
+    @include breakpoint(sm) {
+      font-size: 1em;
+      line-height: 1.8em;
+    }
+  }
+  .work-def-sm {
+    color: $negro !important;
+    font-family: $museo;
+    font-size: 1.1em;
+    line-height: 1.8rem;
+    vertical-align: baseline;
+    letter-spacing: 0.4px;
+    word-spacing: 0px;
+    font-weight: lighter;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: rgb(41, 41, 41);
+    text-align: start;
+    text-indent: 0px;
+  }
+
+  .advice {
+    @extend .work-def;
+    color: $salmon !important;
+  }
+
+  h4 {
+    color: black;
+    font-family: $museo;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    @include breakpoint(xs) {
+      font-size: 16px;
+    }
+  }
+  h5 {
+    color: black;
+    font-family: $museo;
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top:  1.5em;
+    @include breakpoint(xs) {
+      font-size: 16px;
+      margin-top: 0px;
+    }
+  }
+
+  p {
+    color: $verde;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin-bottom: 2px !important;
+    @include breakpoint(xs) {
+      font-size: 14px;
+    }
+    a {
+      color: $gris-anubis;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover {
+        color: $blanco;
+      }
+    }
+    @include breakpoint(sm) {
+      font-size: 1em;
+      line-height: 1.8em;
+    }
+    @include breakpoint(xs) {
+      font-size: 0.9em;
+      line-height: 1.8em;
+    }
+  }
+   .link {
+      color: $negro;
+      font-size: 1em;
+      font-weight: lighter;
+      margin-bottom: 2px !important;
+      @include breakpoint(xs) {
+        font-size: 14px;
+      }
+      a {
+        color: $salmon;
+        font-size: 1em;
+        font-weight: 500;
+        &:hover {
+          color: $gris-anubis;
+        }
+      }
+    }
+  }
+.singleSlider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include breakpoint(xs) {
+    margin: 15px -20px;
+  }
+}
+img.projectSlider.defaultimg {
+  // object-fit: contain !important;
+  height: 100% !important;
+  width: 100% !important;
+  // display: none;
+  left: 0 !important;
+}
+
+// image separation
+.psep {
+  margin-bottom: 2rem;
+  margin-top: 1rem !important;
+}
+.sep {
+  margin-bottom: 1rem;
+  margin-top: 2rem !important;
+}
+
+
+.singleSliderNav {
+  margin-bottom: 20px;
+}
+.project-navigation {
+  border-top-color: lighten($gris-anubis, 40%);
+  border-top-style: dotted;
+  border-top-width: 1px;
+  margin: 10px 0 0;
+  padding-top: 20px;
+  text-align: center;
+  a {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: $perla;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    text-indent: -9999px;
+    transition-delay: 0s;
+    transition-duration: 0.15s;
+    transition-property: background;
+    transition-timing-function: ease-in-out;
+    width: 40px;
+    &:hover {
+      background-color: $gris-anubis;
+      color: $blanco;
+      i {
+        color: $blanco;
+      }
+    }
+    i {
+      color: $negro;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -8px 0 0 -8px;
+      text-indent: 0;
+    }
+  }
+}
+.sliderbanner-container {
+  // Asi conseguimos que el viewport se estire y se adapte mejor//No usar, estira imagenes carousel
+  max-height: 780px;
+  // height: 100vh !important;
+  // @include breakpoint(md) {
+  //   height: 80vh !important;
+  // }
+  // @include breakpoint(sm) {
+  //   height: 70vh !important;
+  // }
+  // @include breakpoint(xs) {
+  //   height: 50vh !important;
+  // }
+}
+.sliderbanner {}
+/* ==================================================
+   Contact
+================================================== */
+.keepTouch {
+  font-family: $museo;
+  font-size: 1.8em;
+  color: $verde;
+  @include breakpoint(xl) {
+    font-size: 2.8em;
+    margin-top: 20px;
+  }
+  @include breakpoint(lg) {
+    font-size: 2.3em;
+    margin-top: 20px;
+  }
+  @include breakpoint(md) {
+    font-size: 2.3em;
+    text-align: center;
+  }
+  @include breakpoint(sm) {
+    text-align: center;
+  }
+  @include breakpoint(xs) {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+#contact {
+  margin-top: 0;
+}
+.contact-margin-bottom {
+  margin-bottom: 0;
+}
+.contact-details {
+  border-top: 2px solid lighten($gris-anubis, 0%);
+  border-bottom: 2px solid lighten($gris-anubis, 0%);
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding-top: 10px;
+  text-align: center;
+  @include breakpoint(xl) {
+    border-top: none;
+    border-bottom: none;
+    margin-top: 116px;
+  }
+  @include breakpoint(lg) {
+    border-top: none;
+    border-bottom: none;
+    margin-top: 105px;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 25px;
+  }
+  ul li {
+    color: lighten($gris-anubis, 25%) !important;
+    line-height: 2 !important;
+    margin-bottom: 0 !important;
+    @include breakpoint(xl) {
+      text-align: left;
+    }
+    @include breakpoint(lg) {
+      text-align: left;
+    }
+  }
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 6px !important;
+  }
+  h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    // @include breakpoint (xl) {
+    //     border-top: none;
+    //     border-bottom: none;
+    //     text-align: left;
+    // }
+    // @include breakpoint (lg) {
+    //     border-top: none;
+    //     border-bottom: none;
+    //     text-align: left;
+    // }
+    // @include breakpoint (md) {
+    //     margin-bottom: 16px;
+    // }
+    // @include breakpoint (sm) {
+    //     font-size: 1rem;
+    // }
+    // @include breakpoint (xs) {
+    //     font-size: 1rem;
+    // }
+  }
+}
+#contact-form .submit:hover {
+  background: $verde;
+}
+//Overide button styles//
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  border-color: none;
+  border-radius: none;
+  border-style: none;
+  border-width: none;
+  padding: none;
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* ==================================================
+   Footer
+================================================== */
+footer {
+  position: relative;
+  background: $blanco;
+  padding: 16px 0;
+  @include breakpoint(lg) {
+    padding: 8px 0 6px;
+  }
+  @include breakpoint(md) {
+    padding: 8px 0 6px;
+  }
+  @include breakpoint(sm) {
+    padding: 7px 0 5px;
+  }
+  @include breakpoint(xs) {
+    padding: 6px 0 3px;
+  }
+}
+#social-footer ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  li {
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    float: none;
+    margin: 0 0 0 -5px;
+    &:hover a {
+      background-color: $gris-anubis;
+    }
+    &:hover a i {
+      color: $blanco;
+      opacity: 1;
+    }
+    a {
+      background-color: transparent;
+      -webkit-border-radius: 2px 2px 2px 2px;
+      -moz-border-radius: 2px 2px 2px 2px;
+      border-radius: 2px 2px 2px 2px;
+      display: block;
+      height: 45px;
+      width: 70px;
+      -webkit-transition: background 0.35s ease-in-out 0s;
+      -moz-transition: background 0.35s ease-in-out 0s;
+      -o-transition: background 0.35s ease-in-out 0s;
+      transition: background 0.35s ease-in-out 0s;
+      @include breakpoint(lg) {
+        height: 36px;
+        width: 66px;
+      }
+      @include breakpoint(md) {
+        height: 36px;
+        width: 66px;
+      }
+      @include breakpoint(sm) {
+        height: 30px;
+        width: 60px;
+      }
+      @include breakpoint(xs) {
+        height: 26px;
+        width: 56px;
+      }
+      i {
+        color: $negro;
+        display: inline-block;
+        font-size: 32px;
+        line-height: 45px;
+        margin: 0;
+        opacity: 0.5;
+        filter: alpha(opacity = 30);
+        -webkit-transition: color 0.15s ease-in-out 0s;
+        -moz-transition: color 0.15s ease-in-out 0s;
+        -o-transition: color 0.15s ease-in-out 0s;
+        transition: color 0.15s ease-in-out 0s;
+        @include breakpoint(lg) {
+          font-size: 24px;
+          line-height: 36px;
+          margin: 0;
+        }
+        @include breakpoint(md) {
+          font-size: 24px;
+          line-height: 36px;
+          margin: 0;
+        }
+        @include breakpoint(sm) {
+          font-size: 20px;
+          line-height: 30px;
+          margin: 0;
+        }
+        @include breakpoint(xs) {
+          font-size: 18px;
+          line-height: 26px;
+          margin: 0;
+        }
+      }
+      img {
+        display: inline-block;
+        margin: -3px 0 0;
+        opacity: 1;
+        filter: alpha(opacity = 100);
+        @include breakpoint(lg) {
+          height: 35px;
+          margin-top: -2px;
+        }
+        @include breakpoint(md) {
+          height: 35px;
+          margin-top: -2px;
+        }
+        @include breakpoint(sm) {
+          height: 31px;
+          margin-top: -5px;
+        }
+        @include breakpoint(xs) {
+          height: 27px;
+          margin-top: -2px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+#back-to-top:hover {
+  background-color: $verde;
+}
+/* ==================================================
+   Footer Credits
+================================================== */
+#footer-credits {
+  position: relative;
+  background: $negro;
+  padding: 20px 0;
+  text-align: center;
+  @include breakpoint(sm) {
+    padding: 15px 0;
+  }
+  @include breakpoint(xs) {
+    padding: 10px 0;
+  }
+  p {
+    font-family: $open;
+    color: $perla;
+    font-size: 11px;
+    margin-bottom: 0;
+    @include breakpoint(sm) {
+      font-size: 10px;
+    }
+    @include breakpoint(xs) {
+      font-size: 9px;
+    }
+    a {
+      font-weight: lighter;
+    }
+    &:hover {
+      color: #F97E76;
+    }
   }
 }

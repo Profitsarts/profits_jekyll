@@ -13,7 +13,7 @@
 // 	    line-height: 1.2;
 // 		padding: 60px 0;
 // 		margin-bottom: 0;
-// 		text-align: center;9
+// 		text-align: center;
 // 			span{
 // 				color:$salmon;
 // 			}
@@ -125,7 +125,7 @@ Material Design Card styles
     line-height: 1.9em;
     vertical-align: baseline;
     letter-spacing: 0.4px;
-    margin-top: 2em !important;
+    word-spacing: 0px;
     font-weight: lighter;
     font-style: normal;
     font-variant: normal;
@@ -133,7 +133,6 @@ Material Design Card styles
     text-decoration: rgb(41, 41, 41);
     text-align: start;
     text-indent: 0px;
-    word-spacing: 0px;
     @include breakpoint(xs) {
       font-size: 0.9em;
       line-height: 1.8em;
@@ -158,19 +157,10 @@ Material Design Card styles
     text-decoration: rgb(41, 41, 41);
     text-align: start;
     text-indent: 0px;
-    @include breakpoint(xs) {
-      font-size: 0.7em;
-      line-height: 1.6em;
-    }
-    @include breakpoint(sm) {
-      font-size: 12em;
-      line-height: 1.6em;
-    }
   }
 
   .advice {
     @extend .work-def;
-    font-size: 0.8em;
     color: $salmon !important;
   }
 
@@ -232,7 +222,7 @@ Material Design Card styles
       }
       a {
         color: $salmon;
-        font-size: 0.8em;
+        font-size: 1em;
         font-weight: 500;
         &:hover {
           color: $gris-anubis;
@@ -261,10 +251,9 @@ img.projectSlider.defaultimg {
   margin-top: 1rem !important;
 }
 .sep {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem !important;
+  margin-bottom: 1rem;
+  margin-top: 2rem !important;
 }
-
 
 
 .singleSliderNav {
