@@ -1,0 +1,24 @@
+<div>
+    <section id="portfolio" class="container">
+        <div class="row">
+            <div id="portfolio-projects">
+                <ul id="projects">
+                    <!-- projects -->
+                    {% for work in site.works limit: 6 | reverse %}
+
+                    <li class="item-project span4 {{ work.tags | join: }}">
+
+                        <a class="hover-wrap fancybox" href="{{ work.url | prepend: site.baseurl }}" data-fancybox-group="gallery" title="{{ work.title }}">
+                            <h5>
+                                {{ work.title }}
+                            </h5>
+                            <img src="{{ work.preview }}" data-rjs="2" alt="{{ work.title }}" />
+                            <div class="overlay"></div>
+                        </a>
+                    </li>
+
+                    {% endfor %}
+                </ul>
+            </div>
+    </section>
+</div>

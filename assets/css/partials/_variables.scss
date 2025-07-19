@@ -1,17 +1,18 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
   /* Style Rules */
 }
-$negro: #0D080C;
+$negro: #2A2A2A;
 $blanco: #f8f8f8;
-$gris-anubis: #323A45;
-$perla: #E1E1E1; 
-$verde: #55917F;
-$salmon:#F61067;
-//$verde: #54b589;
-//$salmon: #F97E76;
+$perla: #E1E1E1;
+$marron: #5b5852;
+$verde: #54b589;
+$salmon: #F97E76;
 $gris: #7c7b79;
 $gris-dot: rgb(187, 187, 187);
-
+$gris-anubis: #323A45;
+$lilac: #F7F8FA;
+$soft-pink: #fff5f9;
+$pink: #FFEBF2;
 //GRADIENTS//
 $grad01: linear-gradient(13deg, lighten($verde, 35%), lighten(#83a4d4, 25%));
 //FONTS//
@@ -49,22 +50,4 @@ $avant: "ITCAVANTGARDEGOTHICLTMEDIUM";
       @content;
     }
   }
-}
-
-@mixin flex-center-row {
-  display: block; // fallback viejo
-  *display: inline;
-  zoom: 1;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
