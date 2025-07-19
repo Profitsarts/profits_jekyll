@@ -28,8 +28,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 collections:
-  works:
-    output: true
+    works:
+        output: true
+        permalink: /works/:path/
 
 # Build settings
 theme: minima
