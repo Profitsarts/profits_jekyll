@@ -53,7 +53,7 @@ gulp.task('imagemin', function() {
     .pipe(gulp.dest('assets/img/'));
 });
 
-// BrowserSync config for /profits_jekyll routing
+// BrowserSync config for /profits_jekyll routing - MEJORADO para Chrome
 gulp.task('serve', ['jekyll-build', 'sass-rebuild', 'js-rebuild', 'images-rebuild'], function() {
   browserSync.init({
     port: 3000,
@@ -63,7 +63,21 @@ gulp.task('serve', ['jekyll-build', 'sass-rebuild', 'js-rebuild', 'images-rebuil
         '/profits_jekyll': '_site'
       }
     },
-    startPath: '/profits_jekyll/'
+    startPath: '/profits_jekyll/',
+    
+    // MEJORAS para Chrome (sin afectar Safari)
+    injectChanges: false,
+    reloadDelay: 500,
+    
+    // Headers selectivos solo para JS (no cache completo)
+    middleware: function (req, res, next) {
+      if (req.url.indexOf('/assets/js/') !== -1) {
+        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+        res.setHeader('Pragma', 'no-cache');
+        res.setHeader('Expires', '0');
+      }
+      next();
+    }
   });
 
   gulp.watch('assets/css/**/*.scss', ['sass-rebuild']);
@@ -81,8 +95,11 @@ gulp.task('serve', ['jekyll-build', 'sass-rebuild', 'js-rebuild', 'images-rebuil
 
 // This task rebuilds Jekyll and reloads BrowserSync
 gulp.task('jekyll-rebuild', ['jekyll-build'], function(done) {
-  browserSync.reload();
-  done();
+  // MEJORA: Delay específico para Revolution Slider
+  setTimeout(function() {
+    browserSync.reload();
+    done();
+  }, 500);
 });
 
 gulp.task('default', ['serve']);
