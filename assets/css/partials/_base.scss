@@ -15,7 +15,7 @@ a:active,
 a:focus,
 a:hover {
   outline: 0;
-  color: $marron;
+  color: $salmon;
   text-decoration: none;
 }
 .tp-bullets.simplebullets.round .bullet.selected,
@@ -353,9 +353,10 @@ iframe {
     letter-spacing: 0.1em;
     margin: 0;
     padding: 0.9em 0;
-    font-family: 'Museo Slab';
-    font-size: 2em;
+    font-family: $avant;
+    font-size: 1.8em;
     text-align: center;
+    font-weight: 500;
     @include breakpoint(md) {
       padding: 0.8em 0;
       font-size: 1.8em;
