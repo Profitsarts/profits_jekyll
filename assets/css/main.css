@@ -2834,7 +2834,51 @@ footer.footer-widgets .flickr-list ul li a:hover i {
    Back to Top
 ================================================== */
 
+/* Back to Top - NUEVA VERSIÓN */
 #back-to-top {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #323A45;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 50px;
+    height: 42px;
+    z-index: 99;
+    
+    -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    
+    -webkit-transition: all 0.15s ease-in-out 0s;
+       -moz-transition: all 0.15s ease-in-out 0s;
+     -o-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s;
+}
+
+#back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#back-to-top:hover {
+    background-color: #F97E76;
+}
+
+#back-to-top i {
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -8px;
+    line-height: 1em;
+}
+
+/* Back to Top - VERSIÓN VIEJA */
+
+/* #back-to-top {
 	display: none;
 	background-color: #323A45;
 	margin: 0;
@@ -2867,7 +2911,7 @@ footer.footer-widgets .flickr-list ul li a:hover i {
 	top: 50%;
 	margin: -8px 0 0 -8px;
 	line-height: 1em;
-}
+} */
 
 
 /* ==================================================
@@ -2935,4 +2979,50 @@ footer.footer-widgets .flickr-list ul li a:hover i {
       -ms-transition: none;
        -o-transition: none;
           transition: none;
+}
+
+/* =====================================================
+   ACCESSIBILITY FIX - CSS Override para aria-hidden
+   ===================================================== */
+
+/* Anular COMPLETAMENTE el aria-hidden en body */
+body[aria-hidden="true"] {
+    /* Forzar visibilidad total */
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+    pointer-events: auto !important;
+    
+    /* Asegurar que no se oculte el contenido */
+    position: relative !important;
+    z-index: auto !important;
+}
+
+/* Asegurar accesibilidad de TODO el contenido */
+body[aria-hidden="true"] *,
+body[aria-hidden="true"] *:before,
+body[aria-hidden="true"] *:after {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+/* Override específico para elementos críticos */
+body[aria-hidden="true"] header,
+body[aria-hidden="true"] main,
+body[aria-hidden="true"] footer,
+body[aria-hidden="true"] nav,
+body[aria-hidden="true"] section,
+body[aria-hidden="true"] article {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+
+/* Asegurar que los sliders funcionen normalmente */
+body[aria-hidden="true"] .sliderbanner,
+body[aria-hidden="true"] .fullwidthbanner {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
 }

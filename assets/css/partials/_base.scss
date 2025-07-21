@@ -225,7 +225,55 @@ nav#menu #menu-nav li.sfHover a {
 .no-touch .tparrows:hover,
 .tparrows:hover {
   background-color: $blanco !important;
-  color: $negro !important;
+  color: $gris-anubis !important;
+}
+
+#back-to-top {
+    visibility: hidden;
+    opacity: 0;
+    background-color: $gris-anubis; // Tu color base
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 50px;
+    height: 42px;
+    z-index: 99;
+    
+    -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    
+    -webkit-transition: all 0.15s ease-in-out 0s;
+       -moz-transition: all 0.15s ease-in-out 0s;
+     -o-transition: all 0.15s ease-in-out 0s;
+        transition: all 0.15s ease-in-out 0s;
+    
+    // Hover en TODO el botón - CORREGIDO
+    &:hover {
+        background-color: $perla; // Tu color de hover
+        
+        // La flecha cambia cuando haces hover en cualquier parte del botón
+        i {
+            color: $gris-anubis; // Tu color de flecha en hover
+        }
+    }
+    
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    // Estilo base de la flecha
+    i {
+        font-size: 16px;
+        color: $blanco; // Tu color de flecha base
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -8px 0 0 -8px;
+        line-height: 1em;
+    }
 }
 
 /* ==================================================
@@ -1124,9 +1172,6 @@ footer {
       }
     }
   }
-}
-#back-to-top:hover {
-  background-color: $verde;
 }
 /* ==================================================
    Footer Credits
