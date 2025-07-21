@@ -33,65 +33,7 @@
 // 	margin-bottom: 0;
 //     text-align: center;
 // }
-/* ==================================================
-   PORTFOLIO PROJECTS (SEE)
-================================================== */
-#content {
-  padding: 0;
-  position: relative;
-  background-color: none;
-}
-#portfolio {
-  padding-top: 0;
-  background-color: none;
-}
-//Altura justa para no interferir con sombra de cards
-#portfolio-projects {
 
-}
-// Project text hover
-#projects > li > a > h5 {
-  color: $gris-anubis;
-  font-family: $museo;
-  font-size: 18px;
-  // font-weight: 100;
-  line-height: 1.5em;
-  margin: 0 0 20px;
-}
-.item-project .hover-wrap .overlay {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background: $verde;
-  opacity: 0;
-  filter: alpha(opacity = 0);
-  -webkit-transition: opacity 0.15s ease-in-out 0s;
-  -moz-transition: opacity 0.15s ease-in-out 0s;
-  -o-transition: opacity 0.15s ease-in-out 0s;
-  transition: opacity 0.15s ease-in-out 0s;
-  .item-project h5 a {
-    font-family: $avant;
-    font-size: 13px;
-    color: $negro;
-    &:hover {}
-  }
-}
-/* ==================================================
-Material Design Card styles
-================================================== */
-#portfolio-projects li {
-  //box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  //transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  &:hover {
-     box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
-  }
-  // &:hover {
-  //    box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
-  // }
-}
 /* ==================================================
    Single Page Portfolio Projects
 ================================================== */

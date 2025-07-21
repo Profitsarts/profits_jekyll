@@ -354,7 +354,7 @@ iframe {
     margin: 0;
     padding: 0.9em 0;
     font-family: $avant;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: center;
     font-weight: 500;
     @include breakpoint(md) {
@@ -591,7 +591,7 @@ iframe {
   width: 100%;
   left: 0;
   top: 0;
-  background: $verde;
+  background: $salmon;
   opacity: 0;
   filter: alpha(opacity = 0);
   -webkit-transition: opacity 0.15s ease-in-out 0s;
@@ -605,19 +605,38 @@ iframe {
     &:hover {}
   }
 }
+
 /* ==================================================
 Material Design Card styles
 ================================================== */
+
 #portfolio-projects li {
-  //box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  //transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  &:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.10);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover {
      box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
-  }
-  // &:hover {
-  //    box-shadow: 0 7px 11px rgba(0,0,0,0.16), 0 7px 11px rgba(0,0,0,0.23);
-  // }
+    }
+  a > h5 {
+    // Project text hover
+    color: $gris-anubis;
+    font-family: $museo;
+    font-size: 18px;
+    // font-weight: 100;
+    line-height: 1.5em;
+    margin: 0 0 20px;
+  }  
 }
+// // Project text hover
+// #projects > li > a > h5 {
+//   color: $gris-anubis;
+//   font-family: $museo;
+//   font-size: 18px;
+//   // font-weight: 100;
+//   line-height: 1.5em;
+//   margin: 0 0 20px;
+// }
+
+
 /* ==================================================
    Single Page Portfolio Projects
 ================================================== */
@@ -853,7 +872,7 @@ img.projectSlider.defaultimg {
 .keepTouch {
   font-family: $museo;
   font-size: 1.8em;
-  color: $verde;
+  color: $gris-anubis;
   @include breakpoint(xl) {
     font-size: 2.8em;
     margin-top: 20px;
