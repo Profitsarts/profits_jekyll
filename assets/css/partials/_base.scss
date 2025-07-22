@@ -1,128 +1,114 @@
-h1{
+h1 {
   font-size: 2.986rem;
 }
-h2{
+h2 {
   font-size: 2.488rem;
 }
-h3{
+h3 {
   font-size: 2.074rem;
 }
-h4{
+h4 {
   font-size: 1.728rem;
 }
-h5{
+h5 {
   font-size: 1.44rem;
 }
-h6{
+h6 {
   font-size: 1.2rem;
 }
 p {
-  font-size: 1rem;
-  margin: 0 0 20px;
   color: #323A45;
-  font-weight: normal;
   font-family: $avant, "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   line-height: 1.5em;
-
+  margin: 0 0 20px;
   span {
-    font-size: 1rem;
-    font-family: $avant, "Open Sans", sans-serif;
     color: $primary;
+    font-family: $avant, "Open Sans", sans-serif;
+    font-size: 1rem;
     font-weight: bold;
   }
 }
 small {
-  font-size: 0.833rem;
-  font-family: $avant, "Open Sans", sans-serif;
   color: $primary;
+  font-family: $avant, "Open Sans", sans-serif;
+  font-size: 0.833rem;
   font-weight: lighter;
 }
 a:active,
 a:focus,
 a:hover {
-  outline: 0;
   color: $secondary;
+  outline: 0;
   text-decoration: none;
 }
 .tp-bullets.simplebullets.round .bullet.selected,
 .tp-bullets.simplebullets.round .bullet:hover {
   background-color: $black;
-  opacity: 1;
   filter: alpha(opacity = 100);
+  opacity: 1;
 }
 html {
   // background: $grad01;
 }
 body {
+  background: $white;
   font-family: ITCAVANTGARDEGOTHICLTMEDIUM;
   font-weight: normal;
-  background: $white;
 }
+
 /* ==================================================
    HEADER
 ================================================== */
-
 header {
   background: $white;
-  position: static !important;
-  overflow: hidden !important;
-  width: 100%;
   height: 100%;
-  // @include breakpoint(lg) {
-  //   height: 134px;
-  // }
-  // @include breakpoint(md) {
-  //   height: 120px;
-  // }
-  // @include breakpoint(sm) {
-  //   height: 84px;
-  // }
-  // @include breakpoint(xs) {
-  //   height: 67px !important;
-  // }
+  overflow: hidden !important;
+  position: static !important;
+  width: 100%;
 }
 #slider {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 div#logo {
-  width: 43px;
-  margin: 20px auto -15px !important;
   float: none !important;
+  margin: 20px auto -15px !important;
+  width: 43px;
   @include breakpoint(lg) {
-    width: 43px;
     margin: 16px auto -15px !important;
+    width: 43px;
   }
   @include breakpoint(md) {
-    width: 37px;
     margin: 16px auto -28px !important;
+    width: 37px;
   }
   @include breakpoint(sm) {
-    width: 35px;
     margin: 20px 0 0 110px !important;
+    width: 35px;
   }
   @include breakpoint(xs) {
+    margin: 12px 0 0 20px !important;
     position: relative;
     width: 35px;
-    margin: 12px 0 0 20px !important;
-    // line-height: 53px;
   }
 }
 .profits_logo {
-  display: block;
-  width: 128%;
-  margin-bottom: 15px;
-  height: auto; // mantiene proporción vertical del fondo, si el SVG es cuadrado
-  aspect-ratio: 1/1; // añade esto si quieres que siempre sea cuadrado
+  aspect-ratio: 1/1;
   background: url("../img/logos/profits_logo.svg") no-repeat center center;
   background-size: contain;
+  display: block;
+  height: auto;
+  margin-bottom: 15px;
+  width: 128%;
   @include breakpoint(lg) {
-    width: 120%;
     margin-bottom: 10px;
+    width: 120%;
   }
   @include breakpoint(md) {
-    width: 118%;
     margin-bottom: 8px;
+    width: 118%;
   }
   @include breakpoint(sm) {
     width: 110%;
@@ -131,23 +117,6 @@ div#logo {
     width: 110%;
   }
 }
-// .profits_logo {
-//   display: inline-block;
-//   position: relative;
-//   width: 40px;
-//   height: 57px;
-//   text-indent: -9999px;
-//   background: url("../img/logos/profits_logo.svg") no-repeat;
-//   @include breakpoint(md) {
-//     width: 35px;
-//   }
-//   @include breakpoint(sm) {
-//     width: 35px;
-//   }
-//   @include breakpoint(xs) {
-//     width: 32px;
-//   }
-// }
 /* ==================================================
    NAVBAR
 ================================================== */
@@ -155,77 +124,69 @@ div#logo {
   display: block;
   margin: auto;
 }
-
 #navbar {
-  width: 100%;
   margin-top: 5px;
+  width: 100%;
   @include breakpoint(md) { margin-top: 0; }
   @include breakpoint(sm) { margin-top: -50px; }
   @include breakpoint(xs) {
-    margin-top: -52px;
     margin-left: 0px;
+    margin-top: -52px;
     padding-left: 0px;
   }
 }
-
 nav#menu {
-  margin: 0 auto 20px !important;
-  @include breakpoint(xs) {
-    margin-top: 0 !important;
-    margin-bottom: 20px !important;
-    margin-left: 6rem !important;
-  }  
-  float: none !important;
-  width: fit-content;
-  max-width: 100%;
-  padding: 0;
   background: transparent;
   border: none;
-
+  float: none !important;
+  margin: 0 auto 20px !important;
+  max-width: 100%;
+  padding: 0;
+  width: fit-content;
+  @include breakpoint(xs) {
+    margin-bottom: 20px !important;
+    margin-left: 6rem !important;
+    margin-top: 0 !important;
+  }
   #menu-nav {
+    align-items: center;
+    border-bottom: 1px dotted $gris-dot;
+    border-top: 1px dotted $gris-dot;
     display: flex;
     justify-content: center;
-    align-items: center;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
     position: relative;
-    border-top: 1px dotted $gris-dot;    // <--- LÍNEA ARRIBA
-    border-bottom: 1px dotted $gris-dot; // <--- LÍNEA ABAJO
-
     li {
       display: inline-block;
-      list-style: none;
       float: none;
+      list-style: none;
       margin-top: 3px;
-      padding: 0 24px; // Espaciado entre botones, ajústalo si quieres
-
+      padding: 0 24px;
       @include breakpoint(lg) { padding: 0 17px; }
       @include breakpoint(md) { padding: 0 10px; }
       @include breakpoint(sm) { padding: 0 11px; }
       @include breakpoint(xs) { padding: 0 15px; }
-
       &:last-child {
-        padding-right: 0;
         margin-right: 0;
+        padding-right: 0;
       }
       &:first-child {
-        padding-left: 0;
         margin-left: 0;
+        padding-left: 0;
       }
-
       a {
+        color: $primary;
+        display: block;
         font-family: $museo;
         font-size: 1.4rem;
-        color: $primary;
         font-weight: normal;
-        line-height: 40px;
-        display: block;
         letter-spacing: -0.2px;
-        text-transform: uppercase;
+        line-height: 40px;
         padding: 0;
         text-align: center;
-
+        text-transform: uppercase;
         @include breakpoint(lg) { font-size: 1.2rem; line-height: 35px; }
         @include breakpoint(md) { font-size: 1rem; line-height: 32px; }
         @include breakpoint(sm) { font-size: 0.9rem; line-height: 28px; }
@@ -234,7 +195,6 @@ nav#menu {
     }
   }
 }
-
 nav#menu #menu-nav li a:active,
 nav#menu #menu-nav li a:hover,
 nav#menu #menu-nav li.active a,
@@ -242,76 +202,65 @@ nav#menu #menu-nav li.sfHover a {
   color: $secondary;
   @include transition(all, 0.2s, ease-in-out);
 }
-
 #mobile-nav {
   display: none;
   float: none;
 }
-
 .no-touch .tparrows:hover,
 .tparrows:hover {
   background-color: $white !important;
   color: $primary !important;
 }
-
 #back-to-top {
-    visibility: hidden;
-    height: 40px !important;
-    width: 40px !important;
-    opacity: 0;
-    background-color: $primary; // Tu color base
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    right: 20px;
-    width: 50px;
-    height: 42px;
-    z-index: 99;
-    
-    -webkit-border-radius: 4px 4px 0 0;
-        -moz-border-radius: 4px 4px 0 0;
-    border-radius: 4px 4px 0 0;
-    
-    -webkit-transition: all 0.15s ease-in-out 0s;
-       -moz-transition: all 0.15s ease-in-out 0s;
-     -o-transition: all 0.15s ease-in-out 0s;
-        transition: all 0.15s ease-in-out 0s;
-    
-    // Hover en TODO el botón - CORREGIDO
-    &:hover {
-        background-color: $perla; // Tu color de hover
-        
-        // La flecha cambia cuando haces hover en cualquier parte del botón
-        i {
-            color: $primary; // Tu color de flecha en hover
-        }
-    }
-    
-    &.show {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    // Estilo base de la flecha
+  background-color: $primary;
+  bottom: 0;
+  height: 40px !important;
+  height: 42px;
+  margin: 0;
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  visibility: hidden;
+  width: 40px !important;
+  width: 50px;
+  z-index: 99;
+  -moz-border-radius: 4px 4px 0 0;
+  -o-transition: all 0.15s ease-in-out 0s;
+  -webkit-border-radius: 4px 4px 0 0;
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  -moz-transition: all 0.15s ease-in-out 0s;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.15s ease-in-out 0s;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  &:hover {
+    background-color: $perla;
     i {
-        font-size: 16px;
-        color: $white; // Tu color de flecha base
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin: -8px 0 0 -8px;
-        line-height: 1em;
+      color: $primary;
     }
+  }
+  i {
+    color: $white;
+    font-size: 16px;
+    left: 50%;
+    line-height: 1em;
+    margin: -8px 0 0 -8px;
+    position: absolute;
+    top: 50%;
+  }
 }
+
 
 /* ==================================================
    MAIN CAROUSEL
 ================================================== */
 .fullwidthbanner-container {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
   height: 100vh !important;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   @include breakpoint(md) {
     height: 80vh !important;
   }
@@ -330,19 +279,19 @@ iframe {
     padding-top: 1.5em;
 }
 .embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
   height: 0;
-  overflow: hidden;
   max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
 }
 
 .embed-container iframe, .embed-container object, .embed-container embed {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }
 
 /* ==================================================
@@ -352,52 +301,46 @@ iframe {
 
 .portfolio-over_divider, .portfolio-under_divider  {
   background-color: $primary;
+  margin-bottom: 60px;
   margin-left: -20px;
   margin-right: 0;
-  margin-bottom: 60px;
   margin-top: 1.8rem;
   @include breakpoint(md) {
     margin-bottom: 30px;
-    margin-top: 1rem;
-
     margin-right: 0;
+    margin-top: 1rem;
   }
   @include breakpoint(sm) {
     margin-bottom: 25px;
-    margin-top: 0.8rem;
-
     margin-right: -20px;
+    margin-top: 0.8rem;
   }
   @include breakpoint(xs) {
     margin-bottom: 20px;
-    margin-top: 0.6rem;
-
     margin-right: -20px;
+    margin-top: 0.6rem;
   }
 }
 .overview-over_divider {
   background-color: $primary;
+  margin-bottom: 60px;
   margin-left: -20px;
   margin-right: 0;
-  margin-bottom: 60px;
   margin-top: 30px;
   @include breakpoint(md) {
     margin-bottom: 30px;
-    margin-top: 15px;
-
     margin-right: 0;
+    margin-top: 15px;
   }
   @include breakpoint(sm) {
     margin-bottom: 25px;
-    margin-top: 12px;
-
     margin-right: -20px;
+    margin-top: 12px;
   }
   @include breakpoint(xs) {
     margin-bottom: 20px;
-    margin-top: 10px;
-
     margin-right: -20px;
+    margin-top: 10px;
   }
 }
 
@@ -411,8 +354,8 @@ iframe {
     margin-top: 40px;
   }
   @include breakpoint(md) {
-    margin-top: 20px;
     margin-bottom: 30px;
+    margin-top: 20px;
   }
   @include breakpoint(sm) {
     margin-bottom: 30px;
@@ -426,24 +369,24 @@ iframe {
 .touch_title {
   h1 {
     color: $white;
+    font-family: $avant;
+    // font-size: 1.4em;
+    font-weight: 500;
     letter-spacing: 0.1em;
     margin: 0;
     padding: 0.9em 0;
-    font-family: $avant;
-    // font-size: 1.4em;
     text-align: center;
-    font-weight: 500;
     @include breakpoint(md) {
-      padding: 0.8em 0;
       font-size: 1.8em;
+      padding: 0.8em 0;
     }
     @include breakpoint(sm) {
-      padding: 0.8em 0;
       font-size: 1.6em;
+      padding: 0.8em 0;
     }
     @include breakpoint(xs) {
-      padding: 0.65em 0;
       font-size: 1.4em;
+      padding: 0.65em 0;
     }
   }
 }
@@ -455,12 +398,12 @@ iframe {
 ================================================== */
 .works_title {
   h1 {
+    color: $white;
     font-family: Museo Slab;
     // font-size: 23px;
-    color: $white;
     font-weight: lighter;
-    padding: 0;
     margin: 30px 0 0;
+    padding: 0;
     text-align: center;
     @include breakpoint(md) {
       font-size: 20px;
@@ -478,15 +421,15 @@ iframe {
 }
 .filterMenu {
   position: relative;
+  text-decoration: none;
   top: 0;
   width: 514px;
-  text-decoration: none;
   z-index: 10;
   ul {
-    border-top: 1px dotted $primary;
     border-bottom: 1px dotted $primary;
-    margin-top: 0;
+    border-top: 1px dotted $primary;
     margin-bottom: 0;
+    margin-top: 0;
     // padding: 10px 15px 8px;
     padding: 0 15px 0;
     li {
@@ -497,9 +440,9 @@ iframe {
         padding-right: 0;
       }
       a {
+        color: $primary;
         font-family: $museo;
         // font-size: 1.1rem;
-        color: $primary;
         font-weight: normal;
         padding: 0;
         @include breakpoint(lg) {
@@ -521,43 +464,41 @@ iframe {
     //    background-color: $primary;
     // }
     p {
-      padding: 0.8rem 0 0.8rem 1rem;
+      color: $white;
       font-family: $museo;
       // font-size: 1.1rem;
+      font-weight: normal;
+      padding: 0.8rem 0 0.8rem 1rem;
       @include breakpoint(sm) {
         font-size: 1rem;
       }
       @include breakpoint(xs) {
         font-size: 0.9rem;
       }
-      color: $white;
-      font-weight: normal;
-         
     }
   }
   .dropmenu-active {
     @include breakpoint(xs) {
+      -moz-border-radius: 0 2px 2px 0 !important;
+      -webkit-border-radius: 0 2px 2px 0 !important;
+      border-radius: 0 2px 2px 0 !important;
       margin: 0;
       padding: 0;
-      -webkit-border-radius: 0 2px 2px 0 !important;
-      -moz-border-radius: 0 2px 2px 0 !important;
-      border-radius: 0 2px 2px 0 !important;
     }
     ul li {
       a {
+        background-color: $white;
+        color: $primary;
         font-family: $museo;
         // font-size: 1.1rem;
+        font-weight: normal;
+        padding: 8px 0 8px 15px;
         @include breakpoint(sm) {
           font-size: 1rem;
         }
         @include breakpoint(xs) {
           font-size: 1rem;
         }
-        color: $primary;
-        background-color: $white;
-
-        font-weight: normal;
-        padding: 8px 0 8px 15px;
       }
       // &:hover {
       //   color: $tertiary;
@@ -578,9 +519,9 @@ iframe {
 //Portfolio projects en XS
 #portfolio-projects {
   @include breakpoint(xs) {
+    margin-bottom: 0;
     margin-left: -20px;
     margin-right: -20px;
-    margin-bottom: 0;
   }
 }
 #projects li {
@@ -639,13 +580,13 @@ iframe {
    PORTFOLIO PROJECTS (SEE)
 ================================================== */
 #content {
+  background-color: none;
   padding: 0;
   position: relative;
-  background-color: none;
 }
 #portfolio {
-  padding-top: 0;
   background-color: none;
+  padding-top: 0;
 }
 //Altura justa para no interferir con sombra de cards
 #portfolio-projects {
@@ -661,23 +602,23 @@ iframe {
   margin: 0 0 20px;
 }
 .item-project .hover-wrap .overlay {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
   background: $secondary;
-  opacity: 0;
+  display: block;
   filter: alpha(opacity = 0);
-  -webkit-transition: opacity 0.15s ease-in-out 0s;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.15s ease-in-out 0s;
+  width: 100%;
   -moz-transition: opacity 0.15s ease-in-out 0s;
   -o-transition: opacity 0.15s ease-in-out 0s;
-  transition: opacity 0.15s ease-in-out 0s;
+  -webkit-transition: opacity 0.15s ease-in-out 0s;
   .item-project h5 a {
+    color: $black;
     font-family: $avant;
     // font-size: 13px;
-    color: $black;
     &:hover {}
   }
 }
@@ -723,17 +664,17 @@ Material Design Card styles
 
   .work-def, .work-def-sm {
     color: $black !important;
-    // line-height: 1.9em;
-    vertical-align: baseline;
-    letter-spacing: 0.4px;
-    word-spacing: 0px;
-    font-weight: lighter;
     font-style: normal;
     font-variant: normal;
-    text-transform: none;
-    // text-decoration: rgb(41, 41, 41);
+    font-weight: lighter;
+    letter-spacing: 0.4px;
+    // line-height: 1.9em;
     text-align: start;
+    // text-decoration: rgb(41, 41, 41);
     text-indent: 0px;
+    text-transform: none;
+    vertical-align: baseline;
+    word-spacing: 0px;
     @include breakpoint(xs) {
       // font-size: 0.9em;
       line-height: 1.8em;
@@ -769,9 +710,9 @@ Material Design Card styles
   h4 {
     color: $primary;
     font-family: $museo;
+    font-weight: lighter;
     line-height: 2.6rem;
     margin: 0.6rem 0 1rem;
-    font-weight: lighter;
     @include breakpoint(xs) {
       // font-size: 16px;
     }
@@ -779,8 +720,8 @@ Material Design Card styles
   h5 {
     color: $primary;
     font-family: $avant;
-    margin: 0.6rem 0 1rem;  
     font-weight: lighter;
+    margin: 0.6rem 0 1rem;  
     @include breakpoint(xs) {
       // font-size: 16px;
     }
@@ -788,8 +729,8 @@ Material Design Card styles
 
   p {
     color: $primary;
-    line-height: 1.8rem;
     font-weight: lighter;
+    line-height: 1.8rem;
     margin: 0.6rem 0 1rem;
     @include breakpoint(sm) {
       font-size: 1em;
@@ -800,8 +741,8 @@ Material Design Card styles
       line-height: 1.8em;
     }
    span {
-    font-size: 1rem;
     color: $primary;
+    font-size: 1rem;
     font-weight: lighter;
     }
     a {
@@ -831,8 +772,8 @@ Material Design Card styles
     }
   }
 .singleSlider {
-  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
   @include breakpoint(xs) {
     margin: 15px -20px;
   }
@@ -846,9 +787,9 @@ Material Design Card styles
 img.projectSlider.defaultimg {
   // object-fit: contain !important;
   height: 100% !important;
+  left: 0 !important;
   width: 100% !important;
   // display: none;
-  left: 0 !important;
 }
 
 // image separation
@@ -868,14 +809,14 @@ img.projectSlider.defaultimg {
     z-index: 999;
 }
 .project-navigation {
-  border-top-color: lighten($primary, 40%);
-  border-top-style: dotted;
-  border-top-width: 1px;
+  background-color: rgba($white, 0.95);
   border-bottom-color: lighten($primary, 40%);
   border-bottom-style: dotted;
   border-bottom-width: 1px;
+  border-top-color: lighten($primary, 40%);
+  border-top-style: dotted;
+  border-top-width: 1px;
   margin: 0 0 0;
-  background-color: rgba($white, 0.95);
   padding: 20px 20px 20px;
   text-align: center;
   a {
@@ -929,11 +870,11 @@ img.projectSlider.defaultimg {
     i {
       color: $black;
       font-size: 16px;
-      position: absolute;
-      top: 50%;
       left: 50%;
       margin: -8px 0 0 -8px;
+      position: absolute;
       text-indent: 0;
+      top: 50%;
     }
   }
 }
@@ -956,9 +897,9 @@ img.projectSlider.defaultimg {
    Contact
 ================================================== */
 .keepTouch {
+  color: $primary;
   font-family: $museo;
   font-size: 1.8em;
-  color: $primary;
   @include breakpoint(xl) {
     font-size: 2.8em;
     margin-top: 20px;
@@ -975,8 +916,8 @@ img.projectSlider.defaultimg {
     text-align: center;
   }
   @include breakpoint(xs) {
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
   }
 }
 #contact {
@@ -986,20 +927,20 @@ img.projectSlider.defaultimg {
   margin-bottom: 0;
 }
 .contact-details {
-  border-top: 2px solid lighten($primary, 0%);
   border-bottom: 2px solid lighten($primary, 0%);
-  margin-top: 0;
+  border-top: 2px solid lighten($primary, 0%);
   margin-bottom: 27px;
+  margin-top: 0;
   padding-top: 10px;
   text-align: center;
   @include breakpoint(xl) {
-    border-top: none;
     border-bottom: none;
+    border-top: none;
     margin-top: 116px;
   }
   @include breakpoint(lg) {
-    border-top: none;
     border-bottom: none;
+    border-top: none;
     margin-top: 105px;
   }
   @include breakpoint(xs) {
@@ -1053,8 +994,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 /* Reset `button` and button-style `input` default styles */
@@ -1062,25 +1003,25 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
-  border-color: none;
-  border-radius: none;
-  border-style: none;
-  border-width: none;
-  padding: none;
-  background: none;
-  border: 0;
-  color: inherit;
-  /* cursor: default; */
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
   -webkit-appearance: button;
   /* for input */
   -webkit-user-select: none;
   /* for button */
   -moz-user-select: none;
   -ms-user-select: none;
+  background: none;
+  border-color: none;
+  border-radius: none;
+  border-style: none;
+  border-width: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: none;
+  padding: 0;
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -1091,9 +1032,9 @@ input::-moz-focus-inner {
    Footer
 ================================================== */
 footer {
-  position: relative;
   background: $white;
   padding: 16px 0;
+  position: relative;
   @include breakpoint(lg) {
     padding: 8px 0 6px;
   }
@@ -1114,8 +1055,8 @@ footer {
   li {
     cursor: pointer;
     display: inline-block;
-    list-style: none;
     float: none;
+    list-style: none;
     margin: 0 0 0 -5px;
     &:hover a {
       background-color: $primary;
@@ -1126,16 +1067,16 @@ footer {
     }
     a {
       background-color: transparent;
-      -webkit-border-radius: 2px 2px 2px 2px;
-      -moz-border-radius: 2px 2px 2px 2px;
       border-radius: 2px 2px 2px 2px;
       display: block;
       height: 45px;
+      transition: background 0.35s ease-in-out 0s;
       width: 70px;
-      -webkit-transition: background 0.35s ease-in-out 0s;
+      -moz-border-radius: 2px 2px 2px 2px;
       -moz-transition: background 0.35s ease-in-out 0s;
       -o-transition: background 0.35s ease-in-out 0s;
-      transition: background 0.35s ease-in-out 0s;
+      -webkit-border-radius: 2px 2px 2px 2px;
+      -webkit-transition: background 0.35s ease-in-out 0s;
       @include breakpoint(lg) {
         height: 36px;
         width: 66px;
@@ -1155,15 +1096,15 @@ footer {
       i {
         color: $black;
         display: inline-block;
+        filter: alpha(opacity = 30);
         font-size: 32px;
         line-height: 45px;
         margin: 0;
         opacity: 0.5;
-        filter: alpha(opacity = 30);
-        -webkit-transition: color 0.15s ease-in-out 0s;
+        transition: color 0.15s ease-in-out 0s;
         -moz-transition: color 0.15s ease-in-out 0s;
         -o-transition: color 0.15s ease-in-out 0s;
-        transition: color 0.15s ease-in-out 0s;
+        -webkit-transition: color 0.15s ease-in-out 0s;
         @include breakpoint(lg) {
           font-size: 24px;
           line-height: 36px;
@@ -1187,9 +1128,9 @@ footer {
       }
       img {
         display: inline-block;
+        filter: alpha(opacity = 100);
         margin: -3px 0 0;
         opacity: 1;
-        filter: alpha(opacity = 100);
         @include breakpoint(lg) {
           height: 35px;
           margin-top: -2px;
@@ -1204,8 +1145,8 @@ footer {
         }
         @include breakpoint(xs) {
           height: 27px;
-          margin-top: -2px;
           margin-bottom: 5px;
+          margin-top: -2px;
         }
       }
     }
@@ -1215,9 +1156,9 @@ footer {
    Footer Credits
 ================================================== */
 #footer-credits {
-  position: relative;
   background: $black;
   padding: 20px 0;
+  position: relative;
   text-align: center;
   @include breakpoint(sm) {
     padding: 15px 0;
@@ -1226,8 +1167,8 @@ footer {
     padding: 10px 0;
   }
   p {
-    font-family: $open;
     color: $perla;
+    font-family: $open;
     font-size: 11px;
     margin-bottom: 0;
     @include breakpoint(sm) {
