@@ -6,6 +6,23 @@ inner_path: true
 <!-- Start Portfolio Content -->
 <section id="portfolio-content">
     <div class="container">
+        <!-- Start Navigation -->
+        <div class="row singleSliderNav">
+            <div class="span12">
+                <div class="project-navigation">
+                    {% if page.previous.url %}
+                    <a class="prev-btn pull-left" href="{{ page.previous.url | prepend: site.baseurl }}"><i class="font-icon-arrow-simple-left"></i>Next Project</a> {% endif %}
+
+                    {% if page.next.url %}
+                    <a class="right-btn pull-right" href="{{ page.next.url | prepend: site.baseurl }}"><i class="font-icon-arrow-simple-right"></i>Previous Project</a> {% endif %}
+
+
+
+                    <a href="{{ site.baseurl | append: "/#see" }}"><i class="font-icon-grid"></i>Back to Portfolio</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Navigation -->
 
         <!-- Start Simple Slider -->
         <div class="row singleSlider">
@@ -55,10 +72,6 @@ inner_path: true
                 {% if page.var %}
                   {% include {{ page.var }} %}
                 {% endif %}
-
-
-
-
             </div>
         </div>
         <!-- End Work Info -->
@@ -67,23 +80,7 @@ inner_path: true
 
         <!-- End Case info -->
 
-        <!-- Start Navigation -->
-        <div class="row singleSliderNav">
-            <div class="span12">
-                <div class="project-navigation">
-                    {% if page.previous.url %}
-                    <a class="prev-btn pull-left" href="{{ page.previous.url | prepend: site.baseurl }}"><i class="font-icon-arrow-simple-left"></i>Next Project</a> {% endif %}
-
-                    {% if page.next.url %}
-                    <a class="right-btn pull-right" href="{{ page.next.url | prepend: site.baseurl }}"><i class="font-icon-arrow-simple-right"></i>Previous Project</a> {% endif %}
-
-
-
-                    <a href="{{ site.baseurl | append: "/#see" }}"><i class="font-icon-grid"></i>Back to Portfolio</a>
-                </div>
-            </div>
-        </div>
-        <!-- End Navigation -->
+        
     </div>
 </section>
 <!-- End Portfolio Content -->

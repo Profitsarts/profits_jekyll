@@ -3,11 +3,11 @@
 ================================================== */
 // #title-page {
 // 	position: relative;
-// 	background-color: $verde;
+// 	background-color: $tertiary;
 // 	margin-top: 100px;
 // 	padding: 70px 0 0px;
 // 	h2 {
-// 		color:$blanco;
+// 		color:$white;
 // 	    font-size: 32px;
 // 	    font-weight: 300;
 // 	    line-height: 1.2;
@@ -15,7 +15,7 @@
 // 		margin-bottom: 0;
 // 		text-align: center;
 // 			span{
-// 				color:$salmon;
+// 				color:$secondary;
 // 			}
 // 		}
 // }
@@ -43,7 +43,7 @@
   margin-bottom: 0;
   h2 {
     font-size: 2rem;
-    color: $gris-anubis;
+    color: $primary;
     font-family: $museo;
     font-weight: normal;
     line-height: 1.5em;
@@ -51,7 +51,7 @@
   }
 
   h3 {
-    color: $gris-anubis;
+    color: $primary;
     font-family: $museo;
     font-size: 20px;
     font-weight: lighter;
@@ -61,7 +61,7 @@
     }
   }
   .work-def {
-    color: $negro !important;
+    color: $black !important;
     font-family: $museo;
     font-size: 1.2em;
     line-height: 1.9em;
@@ -85,7 +85,7 @@
     }
   }
   .work-def-sm {
-    color: $negro !important;
+    color: $black !important;
     font-family: $museo;
     font-size: 1.1em;
     line-height: 1.8rem;
@@ -103,7 +103,7 @@
 
   .advice {
     @extend .work-def;
-    color: $salmon !important;
+    color: $secondary !important;
   }
 
   h4 {
@@ -130,7 +130,7 @@
   }
 
   p {
-    color: $verde;
+    color: $tertiary;
     font-size: 1.2em;
     font-weight: lighter;
     margin-bottom: 2px !important;
@@ -138,11 +138,11 @@
       font-size: 14px;
     }
     a {
-      color: $gris-anubis;
+      color: $primary;
       font-size: 16px;
       font-weight: 500;
       &:hover {
-        color: $blanco;
+        color: $white;
       }
     }
     @include breakpoint(sm) {
@@ -155,7 +155,7 @@
     }
   }
    .link {
-      color: $negro;
+      color: $black;
       font-size: 1em;
       font-weight: lighter;
       margin-bottom: 2px !important;
@@ -163,11 +163,11 @@
         font-size: 14px;
       }
       a {
-        color: $salmon;
+        color: $secondary;
         font-size: 1em;
         font-weight: 500;
         &:hover {
-          color: $gris-anubis;
+          color: $primary;
         }
       }
     }
@@ -202,7 +202,7 @@ img.projectSlider.defaultimg {
   margin-bottom: 20px;
 }
 .project-navigation {
-  border-top-color: lighten($gris-anubis, 40%);
+  border-top-color: lighten($primary, 40%);
   border-top-style: dotted;
   border-top-width: 1px;
   margin: 10px 0 0;
@@ -231,14 +231,14 @@ img.projectSlider.defaultimg {
     transition-timing-function: ease-in-out;
     width: 40px;
     &:hover {
-      background-color: $gris-anubis;
-      color: $blanco;
+      background-color: $primary;
+      color: $white;
       i {
-        color: $blanco;
+        color: $white;
       }
     }
     i {
-      color: $negro;
+      color: $black;
       font-size: 16px;
       position: absolute;
       top: 50%;
@@ -269,7 +269,7 @@ img.projectSlider.defaultimg {
 .keepTouch {
   font-family: $museo;
   font-size: 1.8em;
-  color: $verde;
+  color: $tertiary;
   @include breakpoint(xl) {
     font-size: 2.8em;
     margin-top: 20px;
@@ -297,8 +297,8 @@ img.projectSlider.defaultimg {
   margin-bottom: 0;
 }
 .contact-details {
-  border-top: 2px solid lighten($gris-anubis, 0%);
-  border-bottom: 2px solid lighten($gris-anubis, 0%);
+  border-top: 2px solid lighten($primary, 0%);
+  border-bottom: 2px solid lighten($primary, 0%);
   margin-top: 0;
   margin-bottom: 27px;
   padding-top: 10px;
@@ -317,7 +317,7 @@ img.projectSlider.defaultimg {
     margin-bottom: 25px;
   }
   ul li {
-    color: lighten($gris-anubis, 25%) !important;
+    color: lighten($primary, 25%) !important;
     line-height: 2 !important;
     margin-bottom: 0 !important;
     @include breakpoint(xl) {
@@ -356,7 +356,7 @@ img.projectSlider.defaultimg {
   }
 }
 #contact-form .submit:hover {
-  background: $verde;
+  background: $tertiary;
 }
 //Overide button styles//
 [role="button"],
@@ -403,7 +403,7 @@ input::-moz-focus-inner {
 ================================================== */
 footer {
   position: relative;
-  background: $blanco;
+  background: $white;
   padding: 16px 0;
   @include breakpoint(lg) {
     padding: 8px 0 6px;
@@ -429,10 +429,10 @@ footer {
     float: none;
     margin: 0 0 0 -5px;
     &:hover a {
-      background-color: $gris-anubis;
+      background-color: $primary;
     }
     &:hover a i {
-      color: $blanco;
+      color: $white;
       opacity: 1;
     }
     a {
@@ -464,7 +464,7 @@ footer {
         width: 56px;
       }
       i {
-        color: $negro;
+        color: $black;
         display: inline-block;
         font-size: 32px;
         line-height: 45px;
@@ -523,14 +523,14 @@ footer {
   }
 }
 #back-to-top:hover {
-  background-color: $verde;
+  background-color: $tertiary;
 }
 /* ==================================================
    Footer Credits
 ================================================== */
 #footer-credits {
   position: relative;
-  background: $negro;
+  background: $black;
   padding: 20px 0;
   text-align: center;
   @include breakpoint(sm) {

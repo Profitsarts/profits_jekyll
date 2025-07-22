@@ -15,12 +15,12 @@ a:active,
 a:focus,
 a:hover {
   outline: 0;
-  color: $salmon;
+  color: $secondary;
   text-decoration: none;
 }
 .tp-bullets.simplebullets.round .bullet.selected,
 .tp-bullets.simplebullets.round .bullet:hover {
-  background-color: $negro;
+  background-color: $black;
   opacity: 1;
   filter: alpha(opacity = 100);
 }
@@ -30,14 +30,14 @@ html {
 body {
   font-family: ITCAVANTGARDEGOTHICLTMEDIUM;
   font-weight: normal;
-  background: $blanco;
+  background: $white;
 }
 /* ==================================================
    HEADER
 ================================================== */
 
 header {
-  background: $blanco;
+  background: $white;
   position: static !important;
   overflow: hidden !important;
   width: 100%;
@@ -191,7 +191,7 @@ nav#menu {
       a {
         font-family: $museo;
         font-size: 1.4rem;
-        color: $gris-anubis;
+        color: $primary;
         font-weight: normal;
         line-height: 40px;
         display: block;
@@ -213,7 +213,7 @@ nav#menu #menu-nav li a:active,
 nav#menu #menu-nav li a:hover,
 nav#menu #menu-nav li.active a,
 nav#menu #menu-nav li.sfHover a {
-  color: $salmon;
+  color: $secondary;
   @include transition(all, 0.2s, ease-in-out);
 }
 
@@ -224,14 +224,16 @@ nav#menu #menu-nav li.sfHover a {
 
 .no-touch .tparrows:hover,
 .tparrows:hover {
-  background-color: $blanco !important;
-  color: $gris-anubis !important;
+  background-color: $white !important;
+  color: $primary !important;
 }
 
 #back-to-top {
     visibility: hidden;
+    height: 40px !important;
+    width: 40px !important;
     opacity: 0;
-    background-color: $gris-anubis; // Tu color base
+    background-color: $primary; // Tu color base
     margin: 0;
     position: fixed;
     bottom: 0;
@@ -255,7 +257,7 @@ nav#menu #menu-nav li.sfHover a {
         
         // La flecha cambia cuando haces hover en cualquier parte del botón
         i {
-            color: $gris-anubis; // Tu color de flecha en hover
+            color: $primary; // Tu color de flecha en hover
         }
     }
     
@@ -267,7 +269,7 @@ nav#menu #menu-nav li.sfHover a {
     // Estilo base de la flecha
     i {
         font-size: 16px;
-        color: $blanco; // Tu color de flecha base
+        color: $white; // Tu color de flecha base
         position: absolute;
         left: 50%;
         top: 50%;
@@ -323,7 +325,7 @@ iframe {
 //SEE & TOUCH DIVIDERS HORIZONTAL MARGIN SETTINGS//
 
 .portfolio-over_divider, .portfolio-under_divider  {
-  background-color: $gris-anubis;
+  background-color: $primary;
   margin-left: -20px;
   margin-right: 0;
   margin-bottom: 60px;
@@ -348,7 +350,7 @@ iframe {
   }
 }
 .overview-over_divider {
-  background-color: $gris-anubis;
+  background-color: $primary;
   margin-left: -20px;
   margin-right: 0;
   margin-bottom: 60px;
@@ -397,7 +399,7 @@ iframe {
 .see_title,
 .touch_title {
   h1 {
-    color: $blanco;
+    color: $white;
     letter-spacing: 0.1em;
     margin: 0;
     padding: 0.9em 0;
@@ -429,7 +431,7 @@ iframe {
   h1 {
     font-family: Museo Slab;
     font-size: 23px;
-    color: $blanco;
+    color: $white;
     font-weight: lighter;
     padding: 0;
     margin: 30px 0 0;
@@ -455,8 +457,8 @@ iframe {
   text-decoration: none;
   z-index: 10;
   ul {
-    border-top: 1px dotted $gris-anubis;
-    border-bottom: 1px dotted $gris-anubis;
+    border-top: 1px dotted $primary;
+    border-bottom: 1px dotted $primary;
     margin-top: 0;
     margin-bottom: 0;
     // padding: 10px 15px 8px;
@@ -471,7 +473,7 @@ iframe {
       a {
         font-family: $museo;
         font-size: 1.1rem;
-        color: $gris-anubis;
+        color: $primary;
         font-weight: normal;
         padding: 0;
         @include breakpoint(lg) {
@@ -479,7 +481,7 @@ iframe {
         }
         &:active,
         &:hover {
-          color: $salmon;
+          color: $secondary;
           @include transition(all, 0.2s, ease-in-out);
         }
       }
@@ -488,9 +490,9 @@ iframe {
 }
 .dropdown {
   .dropmenu {
-    background: $gris-anubis;
+    background: $primary;
     //  &:hover{
-    //    background-color: $gris-anubis;
+    //    background-color: $primary;
     // }
     p {
       padding: 0.8rem 0 0.8rem 1rem;
@@ -502,7 +504,7 @@ iframe {
       @include breakpoint(xs) {
         font-size: 0.9rem;
       }
-      color: $blanco;
+      color: $white;
       font-weight: normal;
          
     }
@@ -525,14 +527,14 @@ iframe {
         @include breakpoint(xs) {
           font-size: 1rem;
         }
-        color: $gris-anubis;
-        background-color: $blanco;
+        color: $primary;
+        background-color: $white;
 
         font-weight: normal;
         padding: 8px 0 8px 15px;
       }
       // &:hover {
-      //   color: $verde;
+      //   color: $tertiary;
       // }
     }
   }
@@ -625,7 +627,7 @@ iframe {
 }
 // Project text hover
 #projects > li > a > h5 {
-  color: $gris-anubis;
+  color: $primary;
   font-family: $museo;
   font-size: 18px;
   // font-weight: 100;
@@ -639,7 +641,7 @@ iframe {
   width: 100%;
   left: 0;
   top: 0;
-  background: $salmon;
+  background: $secondary;
   opacity: 0;
   filter: alpha(opacity = 0);
   -webkit-transition: opacity 0.15s ease-in-out 0s;
@@ -649,7 +651,7 @@ iframe {
   .item-project h5 a {
     font-family: $avant;
     font-size: 13px;
-    color: $negro;
+    color: $black;
     &:hover {}
   }
 }
@@ -666,7 +668,7 @@ Material Design Card styles
     }
   a > h5 {
     // Project text hover
-    color: $gris-anubis;
+    color: $primary;
     font-family: $museo;
     font-size: 18px;
     // font-weight: 100;
@@ -676,7 +678,7 @@ Material Design Card styles
 }
 // // Project text hover
 // #projects > li > a > h5 {
-//   color: $gris-anubis;
+//   color: $primary;
 //   font-family: $museo;
 //   font-size: 18px;
 //   // font-weight: 100;
@@ -694,7 +696,7 @@ Material Design Card styles
   margin-bottom: 0;
   h2 {
     font-size: 2rem;
-    color: $gris-anubis;
+    color: $primary;
     font-family: $museo;
     font-weight: normal;
     line-height: 1.5em;
@@ -702,7 +704,7 @@ Material Design Card styles
   }
 
   h3 {
-    color: $gris-anubis;
+    color: $primary;
     font-family: $museo;
     font-size: 20px;
     font-weight: lighter;
@@ -712,9 +714,9 @@ Material Design Card styles
     }
   }
   .work-def {
-    color: $negro !important;
+    color: $black !important;
     font-family: $museo;
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.9em;
     vertical-align: baseline;
     letter-spacing: 0.4px;
@@ -736,9 +738,9 @@ Material Design Card styles
     }
   }
   .work-def-sm {
-    color: $negro !important;
+    color: $black !important;
     font-family: $museo;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.8rem;
     vertical-align: baseline;
     letter-spacing: 0.4px;
@@ -754,7 +756,7 @@ Material Design Card styles
 
   .advice {
     @extend .work-def;
-    color: $salmon !important;
+    color: $secondary !important;
   }
 
   h4 {
@@ -781,19 +783,19 @@ Material Design Card styles
   }
 
   p {
-    color: $verde;
+    color: $primary;
     font-size: 1.2em;
     font-weight: lighter;
-    margin-bottom: 2px !important;
+    // margin-bottom: 2px !important;
     @include breakpoint(xs) {
       font-size: 14px;
     }
     a {
-      color: $gris-anubis;
+      color: $primary;
       font-size: 16px;
       font-weight: 500;
       &:hover {
-        color: $blanco;
+        color: $white;
       }
     }
     @include breakpoint(sm) {
@@ -806,7 +808,7 @@ Material Design Card styles
     }
   }
    .link {
-      color: $negro;
+      color: $black;
       font-size: 1em;
       font-weight: lighter;
       margin-bottom: 2px !important;
@@ -814,11 +816,11 @@ Material Design Card styles
         font-size: 14px;
       }
       a {
-        color: $salmon;
+        color: $tertiary;
         font-size: 1em;
         font-weight: 500;
         &:hover {
-          color: $gris-anubis;
+          color: $secondary;
         }
       }
     }
@@ -830,6 +832,12 @@ Material Design Card styles
     margin: 15px -20px;
   }
 }
+
+.tp-rightarrow.default {
+  height: 40px !important;
+  width: 40px !important;
+}
+
 img.projectSlider.defaultimg {
   // object-fit: contain !important;
   height: 100% !important;
@@ -840,24 +848,30 @@ img.projectSlider.defaultimg {
 
 // image separation
 .psep {
-  margin-bottom: 2rem;
-  margin-top: 1rem !important;
+  margin-bottom: 1rem;
+  // margin-top: 1rem !important;
 }
 .sep {
-  margin-bottom: 1rem;
-  margin-top: 2rem !important;
+  margin-bottom: 3rem;
+  margin-top: 0rem !important;
 }
 
 
 .singleSliderNav {
-  margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 .project-navigation {
-  border-top-color: lighten($gris-anubis, 40%);
+  border-top-color: lighten($primary, 40%);
   border-top-style: dotted;
   border-top-width: 1px;
-  margin: 10px 0 0;
-  padding-top: 20px;
+  border-bottom-color: lighten($primary, 40%);
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  margin: 0 0 0;
+  background-color: rgba($white, 0.95);
+  padding: 20px 20px 20px;
   text-align: center;
   a {
     background-attachment: scroll;
@@ -882,14 +896,33 @@ img.projectSlider.defaultimg {
     transition-timing-function: ease-in-out;
     width: 40px;
     &:hover {
-      background-color: $gris-anubis;
-      color: $blanco;
+      background-color: $primary;
+      color: $white;
       i {
-        color: $blanco;
+        color: $white;
       }
     }
+    // INSERTAR AQUÍ - Estilo específico para botón central outlined
+    &:not(.prev-btn):not(.right-btn) {
+      background-color: transparent;
+      border: 1px solid $primary;
+      
+      &:hover {
+        background-color: $primary;
+        color: $white;
+        
+        i {
+          color: $white;
+        }
+      }
+      
+      i {
+        color: $primary;
+      }
+    }
+    // FIN DEL CÓDIGO INSERTADO
     i {
-      color: $negro;
+      color: $black;
       font-size: 16px;
       position: absolute;
       top: 50%;
@@ -920,7 +953,7 @@ img.projectSlider.defaultimg {
 .keepTouch {
   font-family: $museo;
   font-size: 1.8em;
-  color: $gris-anubis;
+  color: $primary;
   @include breakpoint(xl) {
     font-size: 2.8em;
     margin-top: 20px;
@@ -948,8 +981,8 @@ img.projectSlider.defaultimg {
   margin-bottom: 0;
 }
 .contact-details {
-  border-top: 2px solid lighten($gris-anubis, 0%);
-  border-bottom: 2px solid lighten($gris-anubis, 0%);
+  border-top: 2px solid lighten($primary, 0%);
+  border-bottom: 2px solid lighten($primary, 0%);
   margin-top: 0;
   margin-bottom: 27px;
   padding-top: 10px;
@@ -968,7 +1001,7 @@ img.projectSlider.defaultimg {
     margin-bottom: 25px;
   }
   ul li {
-    color: lighten($gris-anubis, 25%) !important;
+    color: $tertiary !important;
     line-height: 2 !important;
     margin-bottom: 0 !important;
     @include breakpoint(xl) {
@@ -1007,7 +1040,7 @@ img.projectSlider.defaultimg {
   }
 }
 #contact-form .submit:hover {
-  background: $verde;
+  background: $secondary;
 }
 //Overide button styles//
 [role="button"],
@@ -1054,7 +1087,7 @@ input::-moz-focus-inner {
 ================================================== */
 footer {
   position: relative;
-  background: $blanco;
+  background: $white;
   padding: 16px 0;
   @include breakpoint(lg) {
     padding: 8px 0 6px;
@@ -1080,10 +1113,10 @@ footer {
     float: none;
     margin: 0 0 0 -5px;
     &:hover a {
-      background-color: $gris-anubis;
+      background-color: $primary;
     }
     &:hover a i {
-      color: $blanco;
+      color: $white;
       opacity: 1;
     }
     a {
@@ -1115,7 +1148,7 @@ footer {
         width: 56px;
       }
       i {
-        color: $negro;
+        color: $black;
         display: inline-block;
         font-size: 32px;
         line-height: 45px;
@@ -1178,7 +1211,7 @@ footer {
 ================================================== */
 #footer-credits {
   position: relative;
-  background: $negro;
+  background: $black;
   padding: 20px 0;
   text-align: center;
   @include breakpoint(sm) {

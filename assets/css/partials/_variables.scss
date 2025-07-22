@@ -1,19 +1,20 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 192dpi) {
   /* Style Rules */
 }
-$negro: #0D080C;
-$blanco: #f8f8f8;
-$gris-anubis: #323A45;
+$black: #0D080C;
+$white: #f8f8f8;
+$primary: #323A45;
+$secondary:#F61067;
+$tertiary: #3AAFB9;
 $perla: #E1E1E1; 
-$verde: #55917F;
-$salmon:#F61067;
-//$verde: #54b589;
-//$salmon: #F97E76;
+
+//$tertiary: #54b589;
+//$secondary: #F97E76;
 $gris: #7c7b79;
 $gris-dot: rgb(187, 187, 187);
 
 //GRADIENTS//
-$grad01: linear-gradient(13deg, lighten($verde, 35%), lighten(#83a4d4, 25%));
+$grad01: linear-gradient(13deg, lighten($tertiary, 35%), lighten(#83a4d4, 25%));
 //FONTS//
 $times: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 $open: "Open Sans", sans-serif;
