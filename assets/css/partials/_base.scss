@@ -1,15 +1,41 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1{
+  font-size: 2.986rem;
+}
+h2{
+  font-size: 2.488rem;
+}
+h3{
+  font-size: 2.074rem;
+}
+h4{
+  font-size: 1.728rem;
+}
+h5{
+  font-size: 1.44rem;
+}
+h6{
+  font-size: 1.2rem;
+}
 p {
+  font-size: 1rem;
   margin: 0 0 20px;
   color: #323A45;
   font-weight: normal;
   font-family: $avant, "Open Sans", sans-serif;
   line-height: 1.5em;
+
+  span {
+    font-size: 1rem;
+    font-family: $avant, "Open Sans", sans-serif;
+    color: $primary;
+    font-weight: bold;
+  }
+}
+small {
+  font-size: 0.833rem;
+  font-family: $avant, "Open Sans", sans-serif;
+  color: $primary;
+  font-weight: lighter;
 }
 a:active,
 a:focus,
@@ -404,7 +430,7 @@ iframe {
     margin: 0;
     padding: 0.9em 0;
     font-family: $avant;
-    font-size: 1.4em;
+    // font-size: 1.4em;
     text-align: center;
     font-weight: 500;
     @include breakpoint(md) {
@@ -430,7 +456,7 @@ iframe {
 .works_title {
   h1 {
     font-family: Museo Slab;
-    font-size: 23px;
+    // font-size: 23px;
     color: $white;
     font-weight: lighter;
     padding: 0;
@@ -472,7 +498,7 @@ iframe {
       }
       a {
         font-family: $museo;
-        font-size: 1.1rem;
+        // font-size: 1.1rem;
         color: $primary;
         font-weight: normal;
         padding: 0;
@@ -497,7 +523,7 @@ iframe {
     p {
       padding: 0.8rem 0 0.8rem 1rem;
       font-family: $museo;
-      font-size: 1.1rem;
+      // font-size: 1.1rem;
       @include breakpoint(sm) {
         font-size: 1rem;
       }
@@ -520,7 +546,7 @@ iframe {
     ul li {
       a {
         font-family: $museo;
-        font-size: 1.1rem;
+        // font-size: 1.1rem;
         @include breakpoint(sm) {
           font-size: 1rem;
         }
@@ -629,7 +655,7 @@ iframe {
 #projects > li > a > h5 {
   color: $primary;
   font-family: $museo;
-  font-size: 18px;
+  // font-size: 18px;
   // font-weight: 100;
   line-height: 1.5em;
   margin: 0 0 20px;
@@ -650,7 +676,7 @@ iframe {
   transition: opacity 0.15s ease-in-out 0s;
   .item-project h5 a {
     font-family: $avant;
-    font-size: 13px;
+    // font-size: 13px;
     color: $black;
     &:hover {}
   }
@@ -670,7 +696,7 @@ Material Design Card styles
     // Project text hover
     color: $primary;
     font-family: $museo;
-    font-size: 18px;
+    // font-size: 18px;
     // font-weight: 100;
     line-height: 1.5em;
     margin: 0 0 20px;
@@ -693,31 +719,11 @@ Material Design Card styles
 
 #portfolio-content {
   background-color: $grad01;
-  margin-bottom: 0;
-  h2 {
-    font-size: 2rem;
-    color: $primary;
-    font-family: $museo;
-    font-weight: normal;
-    line-height: 1.5em;
-    margin: 0 0 10px;
-  }
+  // margin-bottom: 0;
 
-  h3 {
-    color: $primary;
-    font-family: $museo;
-    font-size: 20px;
-    font-weight: lighter;
-    margin-bottom: 0;
-    @include breakpoint(xs) {
-      font-size: 16px;
-    }
-  }
-  .work-def {
+  .work-def, .work-def-sm {
     color: $black !important;
-    font-family: $museo;
-    font-size: 1.5em;
-    line-height: 1.9em;
+    // line-height: 1.9em;
     vertical-align: baseline;
     letter-spacing: 0.4px;
     word-spacing: 0px;
@@ -725,79 +731,66 @@ Material Design Card styles
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    text-decoration: rgb(41, 41, 41);
+    // text-decoration: rgb(41, 41, 41);
     text-align: start;
     text-indent: 0px;
     @include breakpoint(xs) {
-      font-size: 0.9em;
+      // font-size: 0.9em;
       line-height: 1.8em;
     }
     @include breakpoint(sm) {
-      font-size: 1em;
+      // font-size: 1em;
       line-height: 1.8em;
     }
   }
-  .work-def-sm {
-    color: $black !important;
-    font-family: $museo;
-    font-size: 1.3em;
-    line-height: 1.8rem;
-    vertical-align: baseline;
-    letter-spacing: 0.4px;
-    word-spacing: 0px;
-    font-weight: lighter;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
-    text-decoration: rgb(41, 41, 41);
-    text-align: start;
-    text-indent: 0px;
-  }
-
   .advice {
     @extend .work-def;
     color: $secondary !important;
   }
 
-  h4 {
-    color: black;
+  h2 {
+    color: $primary;
     font-family: $museo;
-    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0.6rem 0 1rem;
+  }
+
+  h3 {
+    color: $primary;
+    font-family: $museo;
     font-weight: lighter;
-    margin-bottom: 0;
+    margin: 0.6rem 0 1rem;
+    // @include breakpoint(xs) {
+    //   font-size: 16px;
+    // }
+  }
+
+  h4 {
+    color: $primary;
+    font-family: $museo;
+    line-height: 2.6rem;
+    margin: 0.6rem 0 1rem;
+    font-weight: lighter;
     @include breakpoint(xs) {
-      font-size: 16px;
+      // font-size: 16px;
     }
   }
   h5 {
-    color: black;
-    font-family: $museo;
-    font-size: 1.4em;
-    font-weight: 800;
-    margin-bottom: 10px;
-    margin-top:  1.5em;
+    color: $primary;
+    font-family: $avant;
+    margin: 0.6rem 0 1rem;  
+    font-weight: lighter;
     @include breakpoint(xs) {
-      font-size: 16px;
-      margin-top: 0px;
+      // font-size: 16px;
     }
   }
 
   p {
     color: $primary;
-    font-size: 1.2em;
+    line-height: 1.8rem;
     font-weight: lighter;
-    // margin-bottom: 2px !important;
-    @include breakpoint(xs) {
-      font-size: 14px;
-    }
-    a {
-      color: $primary;
-      font-size: 16px;
-      font-weight: 500;
-      &:hover {
-        color: $white;
-      }
-    }
+    margin: 0.6rem 0 1rem;
     @include breakpoint(sm) {
       font-size: 1em;
       line-height: 1.8em;
@@ -805,13 +798,25 @@ Material Design Card styles
     @include breakpoint(xs) {
       font-size: 0.9em;
       line-height: 1.8em;
+    }
+   span {
+    font-size: 1rem;
+    color: $primary;
+    font-weight: lighter;
+    }
+    a {
+      color: $primary;
+      font-size: 1rem;
+      &:hover {
+        color: $white;
+      }
     }
   }
    .link {
       color: $black;
       font-size: 1em;
       font-weight: lighter;
-      margin-bottom: 2px !important;
+      margin: 0.6rem 0 1rem;
       @include breakpoint(xs) {
         font-size: 14px;
       }
@@ -852,8 +857,8 @@ img.projectSlider.defaultimg {
   // margin-top: 1rem !important;
 }
 .sep {
-  margin-bottom: 3rem;
-  margin-top: 0rem !important;
+  margin-bottom: 1.6rem;
+  // margin-top: 0rem !important;
 }
 
 

@@ -53,15 +53,11 @@ inner_path: true
         <div class="row">
             <div class="span12">
                 <h2>{{ page.big_title }}</h2>
-                <p>{{ page.p }}</p>
+                <h4>{{ page.heading }}</h4>
 
                 {% if page.urlink %}
                   <p class="link"><a href="{{ page.urlink }}" target="_blank">{{ page.link }}</a></p>
                 <!-- {{ page.link | remove:'http://' }} -->
-                {% endif %}
-
-                {% if page.h5%}
-                  <h5> {{ page.h5 }}</h5>
                 {% endif %}
 
                 {% if page.embed %}
