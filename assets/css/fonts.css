@@ -22,14 +22,14 @@ Font-Face Icons
   font-weight: normal;
   font-style: normal;
 }
- @font-face{
-    font-family: 'ITCAVANTGARDEGOTHICLTMEDIUM';
-    src: url('fonts/ITCAVANTGARDEGOTHICLTMEDIUM.eot');
-    src: local("ITC Avant Garde Gothic LT Medium"), 
-    url('fonts/ITCAVANTGARDEGOTHICLTMEDIUM.woff') format("woff"), 
-    url('fonts/ITCAVANTGARDEGOTHICLTMEDIUM.ttf') format("truetype");
-        }
-        
+@font-face{
+	font-family: 'ITCAVANTGARDEGOTHICLTMEDIUM';
+	src: url('fonts/ITCAVANTGARDEGOTHICLTMEDIUM.eot');
+	src: local("ITC Avant Garde Gothic LT Medium"), 
+		url('fonts/ITCAVANTGARDEGOTHICLTMEDIUM.woff') format("woff"), 
+		url('fonts/ITCAVANTGARDEGOTHICLTMEDIUM.ttf') format("truetype");
+}
+   
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'Icons';

@@ -30,11 +30,8 @@ p {
     font-weight: bold;
   }
 }
-small {
-  color: $primary;
-  font-family: $avant, "Open Sans", sans-serif;
-  font-size: 0.833rem;
-  font-weight: lighter;
+small {  
+  font-size: 0.833rem;  
 }
 a:active,
 a:focus,
@@ -276,7 +273,7 @@ nav#menu #menu-nav li.sfHover a {
    Youtube hack
 ================================================== */
 iframe {
-    padding-top: 1.5em;
+    padding-top: 0.7em;
 }
 .embed-container {
   height: 0;
@@ -663,10 +660,10 @@ Material Design Card styles
   // margin-bottom: 0;
 
   .work-def, .work-def-sm {
-    color: $black !important;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: lighter;
+    // color: $black !important;
+    // font-style: normal;
+    // font-variant: normal;
+    // font-weight: lighter;
     letter-spacing: 0.4px;
     // line-height: 1.9em;
     text-align: start;
@@ -694,14 +691,14 @@ Material Design Card styles
     font-family: $museo;
     font-weight: normal;
     line-height: 1.5em;
-    margin: 0.6rem 0 1rem;
+    margin: 2rem 0 1rem;
   }
 
   h3 {
     color: $primary;
     font-family: $museo;
     font-weight: lighter;
-    margin: 0.6rem 0 1rem;
+    margin: 1rem 0 1rem;
     // @include breakpoint(xs) {
     //   font-size: 16px;
     // }
@@ -712,16 +709,16 @@ Material Design Card styles
     font-family: $museo;
     font-weight: lighter;
     line-height: 2.6rem;
-    margin: 0.6rem 0 1rem;
+    margin: 1rem 0 1rem;
     @include breakpoint(xs) {
       // font-size: 16px;
     }
   }
   h5 {
     color: $primary;
-    font-family: $avant;
+    font-family: $museo;
     font-weight: lighter;
-    margin: 0.6rem 0 1rem;  
+    margin: 3rem 0 1rem;  
     @include breakpoint(xs) {
       // font-size: 16px;
     }
@@ -744,6 +741,7 @@ Material Design Card styles
     color: $primary;
     font-size: 1rem;
     font-weight: lighter;
+    margin: 0.6rem 0 1rem;
     }
     a {
       color: $primary;
@@ -752,25 +750,32 @@ Material Design Card styles
         color: $white;
       }
     }
-  }
-   .link {
-      color: $black;
-      font-size: 1em;
-      font-weight: lighter;
+    small {
+      color: $primary lighten($primary, 46%);
+      font-family: $avant, "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: bolder;
       margin: 0.6rem 0 1rem;
-      @include breakpoint(xs) {
-        font-size: 14px;
-      }
-      a {
-        color: $tertiary;
-        font-size: 1em;
-        font-weight: 500;
-        &:hover {
-          color: $secondary;
-        }
+    }
+  }
+ .link {
+    color: $black;
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0.6rem 0 1rem;
+    @include breakpoint(xs) {
+      font-size: 14px;
+    }
+    a {
+      color: $tertiary;
+      font-size: 1em;
+      font-weight: 500;
+      &:hover {
+        color: $secondary;
       }
     }
   }
+}
 .singleSlider {
   margin-bottom: 20px;
   margin-top: 20px;
