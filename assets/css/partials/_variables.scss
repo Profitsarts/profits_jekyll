@@ -9,6 +9,7 @@ $tertiary: #3AAFB9;
 $perla: #E1E1E1; 
 $gris: #7c7b79;
 $gris-dot: rgb(187, 187, 187);
+$gris-JH: #EDEDED;
 
 //GRADIENTS//
 $grad01: linear-gradient(13deg, lighten($tertiary, 35%), lighten(#83a4d4, 25%));
@@ -48,3 +49,30 @@ $avant: "ITCAVANTGARDEGOTHICLTMEDIUM";
     }
   }
 }
+
+
+@mixin spacing($property, $size) {
+  @if $property == mt {
+    @if $size == 1 {
+      .mt-1 { margin-top: 1rem !important; }
+    } @else if $size == 1.5 {
+      .mt-1_5 { margin-top: 1.5rem !important; }
+    } @else if $size == 2 {
+      .mt-2 { margin-top: 2rem !important; }
+    } @else if $size == 3 {
+      .mt-3 { margin-top: 3rem !important; }
+    }
+  } @else if $property == mb {
+    @if $size == 1 {
+      .mb-1 { margin-bottom: 1rem !important; }
+    } @else if $size == 1.5 {
+      .mb-1_5 { margin-bottom: 1.5rem !important; }
+    } @else if $size == 2 {
+      .mb-2 { margin-bottom: 2rem !important; }
+    } @else if $size == 3 {
+      .mb-3 { margin-bottom: 3rem !important; }
+    }
+  }
+}
+
+

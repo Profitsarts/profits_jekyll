@@ -723,7 +723,6 @@ Material Design Card styles
       // font-size: 16px;
     }
   }
-
   p {
     color: $primary;
     font-weight: lighter;
@@ -1190,3 +1189,73 @@ footer {
     }
   }
 }
+/* ==================================================
+   Case Study pages extras
+================================================== */
+
+#slide-01, #slide-24 { 
+  margin-top: 30px; 
+}
+blockquote { 
+  background: $perla; 
+  border-left: 3px solid $secondary;
+  padding: 10px 15px; 
+}
+.user-quote {
+  font-style: italic;
+  padding: 15px;
+  margin-bottom: 1rem;
+  background-color: lighten($secondary, 39%); // Fondo rosa muy pálido
+  border-left: 4px solid $secondary; // Borde lateral con tu color secundario
+  border-radius: 4px;
+}
+
+.challenge-list li {
+  list-style: none; // Oculta el bullet point
+  padding: 15px;
+  margin-bottom: 1rem;
+  background-color: lighten($tertiary, 99%); // Fondo azul muy pálido
+  border-left: 4px solid $tertiary; // Borde lateral con tu color terciario
+  border-radius: 4px;
+
+  strong {
+    color: darken($tertiary, 15%); // Título en azul oscuro para contraste
+  }
+}
+
+/* ==================================================
+   Custom styles for img-polaroid
+================================================== */
+
+.img-polaroid {
+  padding: 10px;
+  background-color: $gris-JH;
+  border: 0px solid #ccc;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+
+  /* --- AÑADE TUS CAMBIOS AQUÍ --- */
+  /* Ejemplo: borde más grueso y de tu color primario */
+  // border: 3px solid $primary; 
+  // padding: 8px; /* Aumentar el espacio interior */
+  // border-radius: 8px; /* Bordes más redondeados */
+}
+
+
+/* ==================================================
+   Includes
+================================================== */
+
+// Generar clases margin-top
+@include spacing(mt, 1);
+@include spacing(mt, 1.5);
+@include spacing(mt, 2);
+@include spacing(mt, 3);
+
+// Generar clases margin-bottom
+@include spacing(mb, 1);
+@include spacing(mb, 1.5);
+@include spacing(mb, 2);
+@include spacing(mb, 3);
+
