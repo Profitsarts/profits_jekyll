@@ -1224,6 +1224,15 @@ blockquote {
 }
 
 /* ==================================================
+   Separador visual para las slides
+================================================== */
+
+.slide-separator {
+  border-top: 1px solid #e0e0e0; // Una línea gris muy sutil para no distraer
+  margin: 4rem 0;             // ¡La clave! Un margen vertical amplio para crear espacio
+}
+
+/* ==================================================
    Custom styles for img-polaroid
 ================================================== */
 
